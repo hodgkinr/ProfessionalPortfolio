@@ -7,25 +7,38 @@ This checklist tracks the repositories, links, and supporting materials needed t
 ## FOR STUDENTS
 
 ### Concept Inventory & Socratic Tutor Bots
-- [ ] GitHub repository link
+Description: make sure to give credit to nathan
+- [x] Drive video link: https://drive.google.com/drive/folders/1OdoSpZmC0Rk355dlgZl5RwmgEcUVFxMW?usp=drive_link
+chatbot1_matlab_link: first assessment chat with links to matlab academy
+chatbot2_concepts: concepts for assessment
 - [ ] Short project description (finalized)
-- [ ] Example prompts or screenshots
+- [x] Example prompts or screenshots
 - [ ] Research write-up or abstract (if applicable)
 - [ ] Deployment status (prototype / classroom / research)
 
 ---
 
-### ASEN 1030: Computing & Engineering in the Age of AI
+### Computing & Engineering in the Age of AI
 - [ ] Course overview link or page
-- [ ] GitHub repository (assignments, tooling, or examples)
+- [x] GitHub repository (assignments, tooling, or examples)
+    Mathworks slides: https://docs.google.com/presentation/d/1hm_b7zdortt6K-7d4EHiFjZIQVNz4kIX/edit?usp=sharing&ouid=115249169185410134457&rtpof=true&sd=true 
+    ASEE papers: 
+- [ ] Syllabi: https://www.colorado.edu/aerospace/media/8832 
 - [ ] Sample assignment(s)
+    Ralphie from 2802
+    Grade recipe from 1030
 - [ ] Description of AI integration philosophy (syllabus)
 - [ ] Term(s) deployed
 
 ---
 
 ### Code Narration & Interview Review Platform
-- [ ] GitHub repository link
+Description: make sure to give credit to nathan
+- [x] Drive video link: https://drive.google.com/drive/folders/1eR3KMVluemarJIA2y9WVUBnLiq5IVU1p?usp=drive_link
+user_upload_code_interview: user upload the code to be interviewed on
+pre_pop_code_interview: pre populated code interview 
+chatbot3_code_interview: personalized feedback on practice code interviews
+
 - [ ] Demo video or screenshots
 - [ ] Short explanation of student workflow
 - [ ] Notes on assessment focus (understanding vs production)
@@ -33,8 +46,10 @@ This checklist tracks the repositories, links, and supporting materials needed t
 
 ---
 
-### Presentation Critique & Reflection Tools
-- [ ] GitHub repository or script link
+### Coursera
+Description:
+- [x] GitHub repository or script link: 
+https://www.coursera.org/learn/introduction-generative-ai 
 - [ ] Example rubric integration
 - [ ] Sample feedback output
 - [ ] Description of classroom use
@@ -45,16 +60,21 @@ This checklist tracks the repositories, links, and supporting materials needed t
 ## FOR INSTRUCTORS
 
 ### Canvas-Integrated Chatbots
-- [ ] GitHub repository link
-- [ ] High-level architecture diagram or description
-- [ ] Example Canvas integration screenshots
-- [ ] Description of instructor configuration options
-- [ ] Notes on FERPA / PII considerations
+Description:
+- [x] GitHub repository link: https://github.com/hodgkinr/BOBPE-render 
+- [x] High-level architecture diagram or description: https://www.youtube.com/watch?v=EK9O8ufFlVI 
+- [x] Example Canvas integration screenshots: see youtube video
+- [x] Description of instructor configuration options: pull from youtube video
+- [x] Notes on FERPA / PII considerations: include in description
 
 ---
 
 ### AI-Assisted LaTeX & Lab Report Grading
-- [ ] GitHub repository link
+Description:
+- [x] GitHub repository link: https://github.com/hodgkinr/BOBPE-latex-grader
+Images and videos: https://drive.google.com/drive/folders/1b_LiiZ1RC0O6c_g5snVK5EFxVZ_Fxn3o?usp=drive_link 
+latex_grader.mov: the UI showing a compiled student submission, and the editable AI evaluation
+- [x] raw_readme.md
 - [ ] Sample input/output
 - [ ] Explanation of human-in-the-loop workflow
 - [ ] Notes on scale (class size, assignments)
@@ -62,20 +82,24 @@ This checklist tracks the repositories, links, and supporting materials needed t
 
 ---
 
-### Sentiment & Progress Analysis Tools
-- [ ] GitHub repository or script link
-- [ ] Description of input data (e.g., weekly reflections)
-- [ ] Example instructor-facing summary
-- [ ] Notes on intervention use cases
-- [ ] Ethics or privacy considerations
+### AI-Augmented personalized feedback
+Description:
+- [x] GitHub repository or script link: https://github.com/UCBoulder/BOBPE-BUFFALO-2025 
+- [x] Images
+concept_report: shows a sample report from a concept quiz
+concept_UI: grader user interface showing the student submission, and AI generated evaluation (editable)
+lab_report: sample student report for a lab submission
+lab_UI: grader user interface showing the student code, output, and AI generated evaluation (editable)
+
 
 ---
 
 ## FOR PARENTS & THE PUBLIC
 
 ### Local Gemini Chatbot for Parents
-- [ ] GitHub repository link
-- [ ] High-level system description
+Description:
+- [x] GitHub repository link: https://github.com/hodgkinr/basic-google-chat 
+- [x] raw_readme.md
 - [ ] Privacy and local deployment notes
 - [ ] Example use cases
 - [ ] Workshop or demo materials
@@ -83,7 +107,14 @@ This checklist tracks the repositories, links, and supporting materials needed t
 ---
 
 ### AI Literacy Workshops & Community Talks & Podcasts
-- [ ] Slide decks or PDFs
+- [x] Slide decks or PDFs: 
+    https://linktr.ee/pen_ai 
+    https://linktr.ee/rmaiig_education 
+- [x] Podcasts
+    Smarter Campus: https://smartercampus.bepodcast.network/episodes/engineering-understanding-bobby-hodgkinson-on-ai-aerospace-rethinking-learning-smarter-campus-podcast-ep-20 
+    Concious Millionaire: https://mgln.ai/e/35/traffic.libsyn.com/consciousmillionaire/BOBBY-HODGKINSON-3161.mp3 
+    Parenting Well: https://parentengagementnetwork.podbean.com/e/47-raising-thinkers-in-the-age-of-ai/ 
+- [ ] Link to published AI Literacy talk on youtube
 - [ ] Recorded talks (if available)
 - [ ] Workshop outline or agenda
 - [ ] Audience(s) served
@@ -91,7 +122,7 @@ This checklist tracks the repositories, links, and supporting materials needed t
 
 ---
 
-## RESEARCH & INFRASTRUCTURE
+<!-- ## RESEARCH & INFRASTRUCTURE
 
 ### BUFFALO
 - [ ] Project description
@@ -113,7 +144,7 @@ This checklist tracks the repositories, links, and supporting materials needed t
 - [ ] Framework description
 - [ ] Example applications
 - [ ] Connection to faculty or scholarship tools
-- [ ] Ethics and equity framing
+- [ ] Ethics and equity framing -->
 
 ---
 

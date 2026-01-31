@@ -11,9 +11,11 @@ Description: make sure to give credit to nathan
 - [x] Drive video link: https://drive.google.com/drive/folders/1OdoSpZmC0Rk355dlgZl5RwmgEcUVFxMW?usp=drive_link
 chatbot1_matlab_link: first assessment chat with links to matlab academy
 chatbot2_concepts: concepts for assessment
-- [ ] Short project description (finalized)
+- [ ] Short project description
 - [x] Example prompts or screenshots
-- [ ] Research write-up or abstract (if applicable)
+- [x] Research write-up or abstract (if applicable):
+    ASEE citation - N/A because this hasn't been published
+    pdf: draft: https://drive.google.com/file/d/1zI5MMvoC6c4BUYhhDZoJRHBNPYKgss_X/view?usp=drive_link 
 - [ ] Deployment status (prototype / classroom / research)
 
 ---
@@ -22,11 +24,12 @@ chatbot2_concepts: concepts for assessment
 - [ ] Course overview link or page
 - [x] GitHub repository (assignments, tooling, or examples)
     Mathworks slides: https://docs.google.com/presentation/d/1hm_b7zdortt6K-7d4EHiFjZIQVNz4kIX/edit?usp=sharing&ouid=115249169185410134457&rtpof=true&sd=true 
-    ASEE papers: 
 - [ ] Syllabi: https://www.colorado.edu/aerospace/media/8832 
 - [ ] Sample assignment(s)
-    Ralphie from 2802
-    Grade recipe from 1030
+    Ralphie from 2802: https://drive.google.com/file/d/1iX72z5aQubGbUpDcuKVNGQ4-JPJHJa_J/view?usp=drive_link
+        ASEE citation:
+    Grade recipe from 1030: Paper in progress: https://drive.google.com/file/d/1nklABGa3Yg1OOZReVbGNImVJlvCsQxbX/view?usp=drive_link 
+        ASEE citation: 
 - [ ] Description of AI integration philosophy (syllabus)
 - [ ] Term(s) deployed
 
@@ -38,8 +41,9 @@ Description: make sure to give credit to nathan
 user_upload_code_interview: user upload the code to be interviewed on
 pre_pop_code_interview: pre populated code interview 
 chatbot3_code_interview: personalized feedback on practice code interviews
+- [ ] ASEE citation:
+- [x] paper: https://drive.google.com/file/d/1bvk0q9eY0lwCQ5CBN-TpqIliGhlTfR_E/view?usp=drive_link 
 
-- [ ] Demo video or screenshots
 - [ ] Short explanation of student workflow
 - [ ] Notes on assessment focus (understanding vs production)
 - [ ] Deployment status (pilot / planned / active)
@@ -101,7 +105,8 @@ Description:
 - [x] GitHub repository link: https://github.com/hodgkinr/basic-google-chat 
 - [x] raw_readme.md
 - [ ] Privacy and local deployment notes
-- [ ] Example use cases
+- [x] Example use cases
+    Video: https://drive.google.com/file/d/17TpmM2Ik7M4Bz_SNP4mkohsUsKqEzrTF/view?usp=drive_link 
 - [ ] Workshop or demo materials
 
 ---

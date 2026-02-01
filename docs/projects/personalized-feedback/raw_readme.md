@@ -1,3 +1,10 @@
+---
+layout: page
+title: Exclude
+nav_exclude: true
+---
+
+
 ## BOBPE / BUFFALO grading workflow — main README
 
 For docker addition see: https://chatgpt.com/share/e/68d5e489-93a4-8009-9f93-38ae9ab596a9 

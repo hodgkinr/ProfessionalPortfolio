@@ -1,3 +1,10 @@
+---
+layout: page
+title: Exclude
+nav_exclude: true
+---
+
+
 # LaTeX AI Grader Platform
 
 This repository contains an AI-assisted grading system for LaTeX-based STEM assignments.  

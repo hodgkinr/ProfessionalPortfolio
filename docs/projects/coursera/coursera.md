@@ -1,3 +1,10 @@
+---
+layout: page
+title: Intro to GenAI (Coursera)
+nav_exclude: true
+---
+
+
 # Introduction to Generative AI (Coursera)
 
 ## Project Summary

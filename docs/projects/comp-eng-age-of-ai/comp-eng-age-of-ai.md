@@ -1,3 +1,9 @@
+---
+layout: page
+title: Computing and Engineering in the Age of AI
+nav_exclude: true
+---
+
 # Computing & Engineering in the Age of AI
 
 ## Project Summary

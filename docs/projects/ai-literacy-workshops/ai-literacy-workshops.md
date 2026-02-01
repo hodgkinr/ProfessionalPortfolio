@@ -1,3 +1,11 @@
+---
+layout: page
+title: AI Literacy Workshops, Community Talks, and Podcasts
+nav_exclude: true
+---
+
+
+
 # AI Literacy Workshops, Community Talks, and Podcasts
 
 ## Project Summary

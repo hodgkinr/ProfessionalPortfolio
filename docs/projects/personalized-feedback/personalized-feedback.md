@@ -1,3 +1,9 @@
+---
+layout: page
+title: AI-Augmented Personalied Feedback
+nav_exclude: true
+---
+
 # AI-Augmented Personalized Feedback
 
 ## Project Summary

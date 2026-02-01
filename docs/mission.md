@@ -1,3 +1,10 @@
+---
+layout: page
+title: Mission
+nav_order: 2
+---
+
+
 # BOBPE Mission
 
 ## Short Tagline

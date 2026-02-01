@@ -1,3 +1,10 @@
+---
+layout: page
+title: Canvas-Integrated Chatbots
+nav_exclude: true
+---
+
+
 # Canvas-Integrated Chatbots
 
 ## Project Summary

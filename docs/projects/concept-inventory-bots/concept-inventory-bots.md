@@ -1,3 +1,9 @@
+---
+layout: page
+title: Concept Inventory
+nav_exclude: true
+---
+
 # Concept Inventory & Socratic Tutor Bots
 
 ## Project Summary

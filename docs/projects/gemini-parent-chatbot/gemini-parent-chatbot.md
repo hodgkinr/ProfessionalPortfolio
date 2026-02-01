@@ -1,3 +1,10 @@
+---
+layout: page
+title: Github Chatbot
+nav_exclude: true
+---
+
+
 # Local Gemini Chatbot for Parents
 
 ## Project Summary

@@ -1,3 +1,9 @@
+---
+layout: page
+title: AI-Assisted LaTeX Grading
+nav_exclude: true
+---
+
 # AI-Assisted LaTeX & Lab Report Grading
 
 ## Project Summary

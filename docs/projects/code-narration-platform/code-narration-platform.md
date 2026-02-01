@@ -1,3 +1,10 @@
+---
+layout: page
+title: Code Interview
+nav_exclude: true
+---
+
+
 # Code Narration & Interview Review Platform
 
 ## Project Summary

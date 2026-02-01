@@ -1,3 +1,10 @@
+---
+layout: home
+title: Home
+nav_order: 1
+---
+
+
 # BOBPE  
 ## BOt-Based Personalized Education for Productivity Enhancement
 

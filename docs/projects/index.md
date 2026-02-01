@@ -1,3 +1,10 @@
+---
+layout: page
+title: Projects
+nav_order: 3
+---
+
+
 # BOBPE Projects
 
 This page provides an overview of the projects that make up the **BOBPE (BOt-Based Personalized Education for Productivity Enhancement)** ecosystem. Each project explores how bot-based AI systems can support personalized learning, feedback, and instructional productivity while remaining grounded in learning science and human-centered pedagogy.

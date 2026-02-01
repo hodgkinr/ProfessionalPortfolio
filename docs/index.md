@@ -6,7 +6,7 @@ nav_order: 1
 
 
 # BOBPE  
-## BOt-Based Personalized Education for Productivity Enhancement
+## BOt-Based Personalized Education & Productivity Enhancement
 
 ### Scalable personalization in education, grounded in learning science and enabled by AI.
 

@@ -82,12 +82,17 @@ The system has been deployed in instructional settings and continues to evolve i
 
 ### Architecture overview and walkthrough video
 
-<iframe src="https://www.youtube.com/watch?v=EK9O8ufFlVI"
-        width="700"
-        height="394"
-        allow="autoplay"
-        style="max-width: 100%;">
+<iframe
+  src="https://www.youtube.com/embed/EK9O8ufFlVI"
+  width="700"
+  height="394"
+  title="Canvas-Integrated Chatbots Demo"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  style="max-width: 100%;">
 </iframe>
+
 
 ---
 

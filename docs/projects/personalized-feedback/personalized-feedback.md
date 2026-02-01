@@ -1,6 +1,6 @@
 ---
 layout: page
-title: AI-Augmented Personalied Feedback
+title: AI-Augmented Personalized Feedback
 nav_exclude: true
 ---
 

@@ -1,0 +1,48 @@
+.
+├── .gitignore
+├── Checklist.md
+├── README
+├── tree.txt
+└── website
+    └── content
+        ├── homepage.md
+        ├── mission.md
+        └── projects
+            ├── ai-literacy-workshops
+            │   └── ai-literacy-workshops.md
+            ├── buffalo
+            │   └── README.md
+            ├── canvas-integrated-chatbots
+            │   └── canvas-integrated-chatbots.md
+            ├── charge
+            │   └── README.md
+            ├── code-narration-platform
+            │   ├── ASEE_RMS_2025___AI_Code_Review.pdf
+            │   └── code-narration-platform.md
+            ├── comp-eng-age-of-ai
+            │   ├── ASEE_2026___ASEN1030_Design (3).pdf
+            │   ├── ASEE_rAIphie.pdf
+            │   └── comp-eng-age-of-ai.md
+            ├── concept-inventory-bots
+            │   ├── ASEE_2025_BUFFALO_WIP.pdf
+            │   └── concept-inventory-bots.md
+            ├── coursera
+            │   └── coursera.md
+            ├── gemini-parent-chatbot
+            │   ├── gemini-parent-chatbot.md
+            │   └── raw_readme.md
+            ├── latex-lab-grading
+            │   ├── latex-lab-grading.md
+            │   └── raw_readme.md
+            ├── personalized-feedback
+            │   ├── images
+            │   │   ├── concept_UI.png
+            │   │   ├── concept_report.png
+            │   │   ├── lab_UI.png
+            │   │   └── lab_report.png
+            │   ├── personalized-feedback.md
+            │   └── raw_readme.md
+            └── pollenators
+                └── README.md
+
+17 directories, 29 files

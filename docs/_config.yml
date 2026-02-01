@@ -1,5 +1,10 @@
 title: BOBPE
 description: BOt-Based Personalized Education for Productivity Enhancement
+author: Bobby Hodgkinson
+email: hodgkinr@gmail.com
+linkedin_username: https://www.linkedin.com/in/bobby-hodgkinson-b6481a24/
+
+
 markdown: kramdown
 theme: minima
 
@@ -7,4 +12,3 @@ header_pages:
   - mission.md
   - projects/index.md
   - contact.md
-

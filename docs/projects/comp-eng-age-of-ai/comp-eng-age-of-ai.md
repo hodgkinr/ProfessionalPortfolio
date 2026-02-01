@@ -50,18 +50,14 @@ Assignments are structured to make student thinking visible and assess learning 
 
 ## Example Course Artifacts
 
-- Course materials and examples:  
-  https://www.colorado.edu/aerospace/media/8832
+- [Course materials and examples](https://www.colorado.edu/aerospace/media/8832)
 
-- MathWorks guest lecture slides on AI in engineering education:  
-  https://docs.google.com/presentation/d/1hm_b7zdortt6K-7d4EHiFjZIQVNz4kIX
+- [MathWorks guest lecture slides on AI in engineering education](https://docs.google.com/presentation/d1hm_b7zdortt6K-7d4EHiFjZIQVNz4kIX)
 
-- Sample student work and assignments:
-  - Ralphie project example  
-    https://drive.google.com/file/d/1iX72z5aQubGbUpDcuKVNGQ4-JPJHJa_J
+- Sample student work and assignments
+  - [Ralphie project example](https://drive.google.com/file/d/1iX72z5aQubGbUpDcuKVNGQ4-JPJHJa_J)
 
-  - Grade recipe and assessment design (paper in progress)  
-    https://drive.google.com/file/d/1nklABGa3Yg1OOZReVbGNImVJlvCsQxbX
+  - [Grade recipe and assessment design (paper in progress)](https://drive.google.com/file/d/1nklABGa3Yg1OOZReVbGNImVJlvCsQxbX)
 
 ---
 

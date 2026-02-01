@@ -80,14 +80,7 @@ The system has been deployed in instructional settings and continues to evolve i
 
 ## Artifacts and Links
 
-- GitHub repository:  
-  https://github.com/hodgkinr/BOBPE-render
-
-- Architecture overview and walkthrough video:  
-  https://www.youtube.com/watch?v=EK9O8ufFlVI
-
-- Canvas integration examples:  
-  Demonstrated in linked video materials
+- [Architecture overview and walkthrough video](https://www.youtube.com/watch?v=EK9O8ufFlVI)
 
 ---
 

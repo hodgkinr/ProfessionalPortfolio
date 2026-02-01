@@ -65,14 +65,9 @@ The system has been tested in controlled instructional contexts and continues to
 
 ## Artifacts and Links
 
-- Demo and walkthrough videos:  
-  https://drive.google.com/drive/folders/1OdoSpZmC0Rk355dlgZl5RwmgEcUVFxMW
+- [Demo and walkthrough videos](https://drive.google.com/drive/folders/1OdoSpZmC0Rk355dlgZl5RwmgEcUVFxMW)
 
-- Draft research paper (unpublished):  
-  https://drive.google.com/file/d/1zI5MMvoC6c4BUYhhDZoJRHBNPYKgss_X/view
-
-- Example prompts and interaction screenshots:  
-  Included in linked demo materials
+- [Draft research paper (unpublished)](https://drive.google.com/file/d/1zI5MMvoC6c4BUYhhDZoJRHBNPYKgss_X/view)
 
 ---
 

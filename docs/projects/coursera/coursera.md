@@ -52,5 +52,4 @@ It complements BOBPE’s more advanced, interactive tools by establishing a shar
 
 ## Link
 
-- Coursera course:  
-  https://www.coursera.org/learn/introduction-generative-ai
+- [Introduction to Generative AI](https://www.coursera.org/learn/introduction-generative-ai)

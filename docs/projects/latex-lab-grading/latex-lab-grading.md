@@ -79,11 +79,7 @@ The system has been deployed in instructional settings and continues to evolve b
 
 ## Artifacts and Links
 
-- GitHub repository:  
-  https://github.com/hodgkinr/BOBPE-latex-grader
-
-- Interface demos and walkthroughs:  
-  https://drive.google.com/drive/folders/1b_LiiZ1RC0O6c_g5snVK5EFxVZ_Fxn3o
+- [Interface demos and walkthroughs](https://drive.google.com/drive/folders/1b_LiiZ1RC0O6c_g5snVK5EFxVZ_Fxn3o)
 
 - Example UI video:  
   `latex_grader.mov` (linked in demo materials)

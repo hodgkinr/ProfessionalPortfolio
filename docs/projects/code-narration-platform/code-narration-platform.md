@@ -69,11 +69,9 @@ The platform has been developed and demonstrated in controlled settings and is b
 
 ## Artifacts and Links
 
-- Demo and workflow videos:  
-  https://drive.google.com/drive/folders/1eR3KMVluemarJIA2y9WVUBnLiq5IVU1p
+- [Demo and workflow videos](https://drive.google.com/drive/folders/1eR3KMVluemarJIA2y9WVUBnLiq5IVU1p)
 
-- Research paper:  
-  https://drive.google.com/file/d/1bvk0q9eY0lwCQ5CBN-TpqIliGhlTfR_E/view
+- [Research paper](https://drive.google.com/file/d/1bvk0q9eY0lwCQ5CBN-TpqIliGhlTfR_E/view)
 
 ---
 

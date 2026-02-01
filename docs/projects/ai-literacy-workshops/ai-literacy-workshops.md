@@ -72,19 +72,15 @@ Sessions range from short talks to multi-hour workshops with live demonstrations
 
 ## Artifacts and Links
 
-- Slide decks and workshop materials:  
-  https://linktr.ee/pen_ai  
-  https://linktr.ee/rmaiig_education
+- [Parenting in the Age of AI](https://linktr.ee/pen_ai)
+- [Rocky Mountain AI Interest Group](https://linktr.ee/rmaiig_education)
 
 - Podcast appearances:
-  - *Smarter Campus*  
-    https://smartercampus.bepodcast.network/episodes/engineering-understanding-bobby-hodgkinson-on-ai-aerospace-rethinking-learning-smarter-campus-podcast-ep-20
+  - [*Smarter Campus*](https://smartercampus.bepodcast.network/episodes/engineering-understanding-bobby-hodgkinson-on-ai-aerospace-rethinking-learning-smarter-campus-podcast-ep-20)
 
-  - *Conscious Millionaire*  
-    https://mgln.ai/e/35/traffic.libsyn.com/consciousmillionaire/BOBBY-HODGKINSON-3161.mp3
+  - [*Conscious Millionaire*](https://mgln.ai/e/35/traffic.libsyn.com/consciousmillionaire/BOBBY-HODGKINSON-3161.mp3)
 
-  - *Parenting Well*  
-    https://parentengagementnetwork.podbean.com/e/47-raising-thinkers-in-the-age-of-ai/
+  - [*Parenting Well*](https://parentengagementnetwork.podbean.com/e/47-raising-thinkers-in-the-age-of-ai/)
 
 ---
 

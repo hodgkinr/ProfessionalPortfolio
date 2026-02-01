@@ -77,15 +77,11 @@ The system has been used in instructional contexts and continues to evolve as pa
 
 ## Artifacts and Links
 
-- GitHub repository:  
-  https://github.com/UCBoulder/BOBPE-BUFFALO-2025
-
 - Example outputs and interfaces:
-  - Concept report sample
-  - Grader interface for concept assessments
-  - Lab report feedback examples
-  - Instructor review interfaces  
-  (See linked repository for images and demonstrations)
+  - [Concept report sample](docs/projects/personalized-feedback/images/concept_report.png)
+  - [Grader interface for concept assessments](docs/projects/personalized-feedback/images/concept_UI.png)
+  - [Lab report feedback examples](docs/projects/personalized-feedback/images/lab_report.png)
+  - [Instructor review interfaces](docs/projects/personalized-feedback/images/lab_UI.png)  
 
 ---
 

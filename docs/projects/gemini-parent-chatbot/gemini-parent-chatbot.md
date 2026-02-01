@@ -70,10 +70,16 @@ The system is used as part of AI literacy workshops and community discussions, a
 ---
 
 ## Artifacts and Links
+### Example UI Walkthrough Video
+
+<iframe src="https://drive.google.com/file/d/17TpmM2Ik7M4Bz_SNP4mkohsUsKqEzrTF/view?usp=sharing"
+        width="700"
+        height="394"
+        allow="autoplay"
+        style="max-width: 100%;">
+</iframe>
 
 - [GitHub repository](https://github.com/hodgkinr/basic-google-chat)
-
-- [Example use case video](https://drive.google.com/file/d/17TpmM2Ik7M4Bz_SNP4mkohsUsKqEzrTF/view)
 
 ---
 

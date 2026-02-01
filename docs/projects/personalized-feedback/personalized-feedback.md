@@ -73,17 +73,34 @@ Students receive clearer guidance on *why* their reasoning is effective or flawe
 **Status:** Active classroom use / Research-informed development  
 The system has been used in instructional contexts and continues to evolve as part of ongoing research into scalable feedback and AI-supported learning.
 
----
-
 ## Artifacts and Links
 
-- Example outputs and interfaces:
-  - ![Concept report sample](images/concept_report.png)
-  - ![Grader interface for concept assessments](images/concept_UI.png)
-  - ![Lab report feedback examples](images/lab_report.png)
-  - ![Instructor review interfaces](images/lab_UI.png)  
+### Concept Report Example
+<img src="images/concept_report.png"
+     alt="Concept report sample"
+     style="max-width: 700px; width: 100%; height: auto;">
 
 ---
+
+### Concept Assessment Grader Interface
+<img src="images/concept_UI.png"
+     alt="Grader interface for concept assessments"
+     style="max-width: 700px; width: 100%; height: auto;">
+
+---
+
+### Lab Report Feedback Example
+<img src="images/lab_report.png"
+     alt="Lab report feedback example"
+     style="max-width: 700px; width: 100%; height: auto;">
+
+---
+
+### Instructor Review Interface
+<img src="images/lab_UI.png"
+     alt="Instructor review interface"
+     style="max-width: 700px; width: 100%; height: auto;">
+
 
 ## Alignment with BOBPE Mission
 

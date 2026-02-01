@@ -79,10 +79,23 @@ The system has been deployed in instructional settings and continues to evolve b
 
 ## Artifacts and Links
 
-- [Interface demos and walkthroughs](https://drive.google.com/drive/folders/1b_LiiZ1RC0O6c_g5snVK5EFxVZ_Fxn3o)
+### Interface Screenshot
 
-- Example UI video:  
-  `latex_grader.mov` (linked in demo materials)
+<img src="https://drive.google.com/uc?export=view&id=1bsRrHQeZiuLj8tGIX6Z5FtQASast2hV0"
+     alt="Interface screenshot"
+     style="max-width: 700px; width: 100%; height: auto;">
+
+---
+
+### Example UI Walkthrough Video
+
+<iframe src="https://drive.google.com/file/d/1ZpjhmVj-PtcYihMzdNJR3a9_yv5MAtJD/preview"
+        width="700"
+        height="394"
+        allow="autoplay"
+        style="max-width: 100%;">
+</iframe>
+
 
 ---
 

@@ -2,3 +2,7 @@ title: BOBPE
 description: BOt-Based Personalized Education for Productivity Enhancement
 markdown: kramdown
 theme: minima
+
+header_pages:
+  - mission.md
+  - projects/index.md

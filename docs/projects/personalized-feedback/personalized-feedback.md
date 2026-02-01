@@ -78,10 +78,10 @@ The system has been used in instructional contexts and continues to evolve as pa
 ## Artifacts and Links
 
 - Example outputs and interfaces:
-  - [Concept report sample](docs/projects/personalized-feedback/images/concept_report.png)
-  - [Grader interface for concept assessments](docs/projects/personalized-feedback/images/concept_UI.png)
-  - [Lab report feedback examples](docs/projects/personalized-feedback/images/lab_report.png)
-  - [Instructor review interfaces](docs/projects/personalized-feedback/images/lab_UI.png)  
+  - ![Concept report sample](images/concept_report.png)
+  - ![Grader interface for concept assessments](images/concept_UI.png)
+  - ![Lab report feedback examples](images/lab_report.png)
+  - ![Instructor review interfaces](images/lab_UI.png)  
 
 ---
 

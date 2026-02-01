@@ -6,3 +6,5 @@ theme: minima
 header_pages:
   - mission.md
   - projects/index.md
+  - contact.md
+

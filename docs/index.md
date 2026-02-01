@@ -55,9 +55,9 @@ BOBPE responds to this challenge by asking a simple question:
 Interactive tutors, feedback systems, and learning tools designed to support conceptual understanding, reflection, and self-regulated learning.
 
 **Featured areas include:**
-- Concept Inventory & Socratic Tutor Bots  
-- Code Narration & Interview Review Platform  
-- AI-Augmented Personalized Feedback
+- [Concept Inventory & Socratic Tutor Bots](concept-inventory-bots/concept-inventory-bots.md)
+- [Code Narration & Interview Review Platform](code-narration-platform/code-narration-platform.md)
+- [AI-Augmented Personalized Feedback](personalized-feedback/personalized-feedback.md)
 
 ---
 
@@ -65,9 +65,9 @@ Interactive tutors, feedback systems, and learning tools designed to support con
 AI-assisted workflows and infrastructure that support grading, feedback, and instructional scalability while preserving human judgment and rigor.
 
 **Featured areas include:**
-- Canvas-Integrated Chatbots  
-- AI-Assisted LaTeX & Lab Report Grading  
-- Course design for Computing & Engineering in the Age of AI
+- [Canvas-Integrated Chatbots](canvas-integrated-chatbots/canvas-integrated-chatbots.md)
+- [AI-Assisted LaTeX & Lab Report Grading](latex-lab-grading/latex-lab-grading.md)
+- [Computing & Engineering in the Age of AI](comp-eng-age-of-ai/comp-eng-age-of-ai.md)
 
 ---
 
@@ -75,9 +75,9 @@ AI-assisted workflows and infrastructure that support grading, feedback, and ins
 AI literacy initiatives focused on confidence, transparency, and responsible engagement with modern AI tools.
 
 **Featured areas include:**
-- Introduction to Generative AI (Coursera)  
-- Local Gemini Chatbot for Parents  
-- AI Literacy Workshops, Community Talks, and Podcasts
+- [Introduction to Generative AI (Coursera)](coursera/coursera.md)
+- [Local Gemini Chatbot for Parents](gemini-parent-chatbot/gemini-parent-chatbot.md)
+- [AI Literacy Workshops, Community Talks, and Podcasts](ai-literacy-workshops/ai-literacy-workshops.md)
 
 ---
 

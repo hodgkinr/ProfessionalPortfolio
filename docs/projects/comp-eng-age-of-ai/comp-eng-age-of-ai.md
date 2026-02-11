@@ -52,7 +52,7 @@ Assignments are structured to make student thinking visible and assess learning 
 
 - [Course materials and examples](https://www.colorado.edu/aerospace/media/8832)
 
-- [MathWorks guest lecture slides on AI in engineering education](https://docs.google.com/presentation/d1hm_b7zdortt6K-7d4EHiFjZIQVNz4kIX)
+- [MathWorks guest lecture slides on AI in engineering education](https://docs.google.com/presentation/d/1ptA9HpWQM-2AHerpu9QZ2iGIvsIzNfFM/edit?usp=sharing&ouid=115249169185410134457&rtpof=true&sd=true)
 
 - Sample student work and assignments
   - [Ralphie project example](https://drive.google.com/file/d/1iX72z5aQubGbUpDcuKVNGQ4-JPJHJa_J)

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#000000",
+              "on-primary": "#ffffff",
+              "secondary": "#CFB87C",
+              "on-secondary": "#000000",
+              "surface": "#f8faf8",
+              "on-surface": "#191c1e",
+              "surface-container": "#edeeed",
+              "surface-container-high": "#e1e2e1",
+              "surface-container-highest": "#d5d6d5",
+              "surface-container-low": "#f3f4f3",
+              "surface-container-lowest": "#ffffff",
+              "outline": "#79776f",
+              "outline-variant": "#cac6bb",
+              "tertiary": "#6e5d2a",
+              "on-tertiary": "#ffffff",
+              "tertiary-container": "#f8e1a6",
+              "on-tertiary-container": "#241a00"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .knowledge-gradient {
+            background: radial-gradient(circle at center, #f8e1a6 0%, #f8faf8 70%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- Sidebar Navigation (Reflecting SideNavBar component from DataStore) -->
+<aside class="h-screen w-64 fixed left-0 top-0 z-40 bg-[#f8faf8] dark:bg-[#191c1c] flex flex-col p-6 space-y-4">
+<div class="mb-4">
+<h1 class="text-lg font-bold text-[#191c1c] dark:text-[#cfb87c] font-headline">CU Boulder</h1>
+<p class="text-[10px] font-medium text-[#4c463a] uppercase tracking-wide">Intellectual Atrium</p>
+</div>
+<nav class="flex flex-col gap-y-1 flex-1 font-headline text-sm font-medium tracking-wide">
+<a class="flex items-center gap-3 px-4 py-3 bg-[#cfb87c] text-[#241a00] font-bold rounded-lg shadow-sm transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span>Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#4c463a] dark:text-[#cec6b6] hover:bg-[#edeeed] dark:hover:bg-[#241a00] rounded-lg transition-transform duration-200 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+<span>Faculty Directory</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#4c463a] dark:text-[#cec6b6] hover:bg-[#edeeed] dark:hover:bg-[#241a00] rounded-lg transition-transform duration-200 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
+<span>Research Grants</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#4c463a] dark:text-[#cec6b6] hover:bg-[#edeeed] dark:hover:bg-[#241a00] rounded-lg transition-transform duration-200 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span>Course Catalog</span>
+</a>
+</nav>
+<div class="pt-4 mt-4 border-t border-[#f3f4f3] dark:border-[#241a00] flex flex-col gap-y-1 font-headline text-sm font-medium tracking-wide">
+<a class="flex items-center gap-3 px-4 py-3 text-[#4c463a] dark:text-[#cec6b6] hover:bg-[#edeeed] dark:hover:bg-[#241a00] rounded-lg transition-transform duration-200 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span>Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#4c463a] dark:text-[#cec6b6] hover:bg-[#edeeed] dark:hover:bg-[#241a00] rounded-lg transition-transform duration-200 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span>Support</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="ml-64 min-h-screen p-8 flex flex-col gap-8">
+<!-- Top Navigation Anchor (Reflecting TopNavBar component from DataStore) -->
+<header class="flex justify-between items-center w-full h-16 max-w-[1440px] mx-auto px-4 sticky top-0 z-30 bg-surface/80 backdrop-blur-md">
+<div>
+<span class="text-[10px] font-bold text-secondary tracking-widest uppercase mb-1 block">Student Mastery</span>
+<h2 class="text-3xl font-headline font-extrabold text-primary tracking-tight">Your Knowledge Ecosystem</h2>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden lg:flex items-center gap-6 font-headline font-bold text-sm">
+<a class="text-primary hover:text-secondary transition-colors" href="#">Academics</a>
+<a class="text-primary hover:text-secondary transition-colors" href="#">Research</a>
+<a class="text-primary hover:text-secondary transition-colors" href="#">Campus Life</a>
+<a class="text-primary hover:text-secondary transition-colors" href="#">Admissions</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Bento Layout Grid -->
+<div class="grid grid-cols-12 gap-8">
+<!-- Large Knowledge Graph Section -->
+<section class="col-span-12 lg:col-span-8 bg-surface-container-lowest rounded-3xl p-8 relative overflow-hidden h-[500px] shadow-sm border border-outline-variant/30 flex flex-col">
+<div class="relative z-10 flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline font-bold text-xl text-on-surface">Knowledge Graph</h3>
+<p class="text-sm text-on-surface-variant">Visualizing interdisciplinary connections</p>
+</div>
+<div class="flex gap-2">
+<span class="px-3 py-1 rounded-full bg-secondary text-primary text-xs font-bold font-headline">AI INSIGHTS ON</span>
+<span class="px-3 py-1 rounded-full bg-primary text-secondary text-xs font-bold font-headline">84% MASTERY</span>
+</div>
+</div>
+<!-- Abstract Visual Concept Map -->
+<div class="absolute inset-0 z-0 knowledge-gradient flex items-center justify-center">
+<div class="relative w-full h-full p-12">
+<!-- Node 1: Science -->
+<div class="absolute top-1/4 left-1/4 bg-primary text-secondary p-6 rounded-2xl shadow-xl flex flex-col items-center gap-2 hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined" data-icon="science">science</span>
+<span class="font-headline font-bold">Quantum Physics</span>
+</div>
+<!-- Node 2: Math -->
+<div class="absolute bottom-1/3 left-1/2 bg-tertiary text-on-tertiary p-5 rounded-2xl shadow-lg flex flex-col items-center gap-2 hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined" data-icon="functions">functions</span>
+<span class="font-headline font-bold">Calculus II</span>
+</div>
+<!-- Node 3: History -->
+<div class="absolute top-1/2 right-1/4 bg-secondary text-primary p-4 rounded-2xl shadow-md flex flex-col items-center gap-2 hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+<span class="font-headline font-bold">Modern Era</span>
+</div>
+<!-- Connection Lines -->
+<svg class="absolute inset-0 w-full h-full opacity-20" preserveaspectratio="none">
+<line class="text-primary" stroke="currentColor" stroke-dasharray="4" stroke-width="2" x1="25%" x2="50%" y1="25%" y2="66%"></line>
+<line class="text-secondary" stroke="currentColor" stroke-dasharray="4" stroke-width="2" x1="50%" x2="75%" y1="66%" y2="50%"></line>
+<line class="text-tertiary" stroke="currentColor" stroke-dasharray="4" stroke-width="2" x1="75%" x2="25%" y1="50%" y2="25%"></line>
+</svg>
+</div>
+</div>
+<div class="mt-auto relative z-10 flex gap-4">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm shadow-md hover:translate-y-[-2px] transition-all">Explore Connections</button>
+<button class="bg-surface-container-high text-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm hover:bg-surface-container-highest transition-all">Focus View</button>
+</div>
+</section>
+<!-- Domain Progress Section -->
+<section class="col-span-12 lg:col-span-4 bg-surface-container-low rounded-3xl p-8 flex flex-col gap-6 border border-outline-variant/30">
+<h3 class="font-headline font-bold text-xl text-on-surface">Domain Mastery</h3>
+<div class="space-y-6">
+<!-- Math -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<span class="font-headline font-bold text-sm">Advanced Mathematics</span>
+<span class="text-xs font-bold text-primary">92%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<!-- Science -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<span class="font-headline font-bold text-sm">Natural Sciences</span>
+<span class="text-xs font-bold text-primary">78%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 78%"></div>
+</div>
+</div>
+<!-- Humanities -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<span class="font-headline font-bold text-sm">Humanities &amp; Ethics</span>
+<span class="text-xs font-bold text-primary">64%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 64%"></div>
+</div>
+</div>
+</div>
+<div class="mt-4 p-4 bg-surface-container-lowest rounded-2xl flex items-center gap-4 border border-outline-variant/20">
+<div class="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant leading-tight">AI predicts mastery of <span class="font-bold">Calculus III</span> within 4 days at current pace.</p>
+</div>
+</div>
+</section>
+<!-- Next Steps / AI Recommendations -->
+<section class="col-span-12 lg:col-span-7 flex flex-col gap-6">
+<div class="flex justify-between items-center">
+<h3 class="font-headline font-bold text-xl text-on-surface">Recommended Next Steps</h3>
+<button class="text-primary text-sm font-bold flex items-center gap-1 hover:text-secondary transition-colors">
+                        View All <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-3xl border border-outline-variant/30 hover:shadow-lg transition-shadow group">
+<div class="flex justify-between mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="menu_book">menu_book</span>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Physics • 15 MIN</span>
+</div>
+<h4 class="font-headline font-bold text-lg mb-2 group-hover:text-secondary transition-colors">The Observer Effect</h4>
+<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Understand how measurement affects quantum particles in this focused module.</p>
+<button class="w-full py-3 bg-primary text-on-primary rounded-xl font-headline font-bold text-sm hover:bg-secondary hover:text-primary transition-all">Start Lesson</button>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-3xl border border-outline-variant/30 hover:shadow-lg transition-shadow group">
+<div class="flex justify-between mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="quiz">quiz</span>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Logic • 5 MIN</span>
+</div>
+<h4 class="font-headline font-bold text-lg mb-2 group-hover:text-secondary transition-colors">Deductive Reasoning</h4>
+<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Quick recall session based on your recent activity in Philosophy 101.</p>
+<button class="w-full py-3 bg-primary text-on-primary rounded-xl font-headline font-bold text-sm hover:bg-secondary hover:text-primary transition-all">Take Quiz</button>
+</div>
+</div>
+</section>
+<!-- Activity Feed -->
+<section class="col-span-12 lg:col-span-5 bg-surface-container-lowest rounded-3xl p-8 flex flex-col gap-6 shadow-sm border border-outline-variant/30">
+<h3 class="font-headline font-bold text-xl text-on-surface">Recent Intelligence</h3>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="smart_toy">smart_toy</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">AI Bot refined Concept Map</p>
+<p class="text-xs text-on-surface-variant">Linked 'Linear Algebra' to 'Graphic Synthesis' based on your query.</p>
+<span class="text-[10px] text-outline mt-1 block">2 hours ago</span>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm text-tertiary" data-icon="military_tech">military_tech</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Mastery Milestone Reached</p>
+<p class="text-xs text-on-surface-variant">You've reached 'Fluent' status in Macroeconomics.</p>
+<span class="text-[10px] text-outline mt-1 block">5 hours ago</span>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="person">person</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Mentorship Session</p>
+<p class="text-xs text-on-surface-variant">You completed a 20-minute dialogue with the AI Tutor.</p>
+<span class="text-[10px] text-outline mt-1 block">Yesterday</span>
+</div>
+</div>
+</div>
+<button class="mt-4 py-3 bg-surface-container border border-outline-variant/30 rounded-xl font-headline font-bold text-xs text-on-surface hover:bg-surface-container-high transition-colors">
+                    Download Progress Report
+                </button>
+</section>
+</div>
+</main>
+<!-- Floating AI Prompt -->
+<div class="fixed bottom-8 right-8 z-50">
+<div class="glass-panel p-4 rounded-3xl shadow-2xl border border-outline-variant/20 flex items-center gap-4 max-w-md">
+<div class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center text-secondary shrink-0 shadow-lg">
+<span class="material-symbols-outlined" data-icon="smart_toy" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</div>
+<div class="flex-1">
+<p class="text-xs font-bold text-primary uppercase mb-0.5">Deep Think Mode</p>
+<input class="w-full bg-transparent border-none focus:ring-0 text-sm font-medium placeholder:text-outline p-0" placeholder="Ask about your progress..." type="text"/>
+</div>
+<button class="w-10 h-10 rounded-full bg-secondary text-primary flex items-center justify-center hover:scale-105 transition-transform shadow-sm">
+<span class="material-symbols-outlined font-bold" data-icon="arrow_upward">arrow_upward</span>
+</button>
+</div>
+</div>
+</body></html>

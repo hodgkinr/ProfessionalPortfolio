@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Exclude | BOBPE</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Exclude" />
+<meta name="author" content="Bobby Hodgkinson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="BOt-Based Personalized Education &amp; Productivity Enhancement" />
+<meta property="og:description" content="BOt-Based Personalized Education &amp; Productivity Enhancement" />
+<link rel="canonical" href="http://0.0.0.0:4000/projects/latex-lab-grading/raw_readme.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/projects/latex-lab-grading/raw_readme.html" />
+<meta property="og:site_name" content="BOBPE" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Exclude" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Bobby Hodgkinson"},"description":"BOt-Based Personalized Education &amp; Productivity Enhancement","headline":"Exclude","url":"http://0.0.0.0:4000/projects/latex-lab-grading/raw_readme.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="BOBPE" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">BOBPE</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/mission.html">Mission</a><a class="page-link" href="/projects/">Projects</a><a class="page-link" href="/contact.html">Contact</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Exclude</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="latex-ai-grader-platform">LaTeX AI Grader Platform</h1>
+
+<p>This repository contains an AI-assisted grading system for LaTeX-based STEM assignments.<br />
+It supports automated evaluation with multiple AI models, human review workflows, and Canvas integration.</p>
+
+<hr />
+
+<h2 id="-overview">🔍 Overview</h2>
+
+<p>The platform is designed around a two-database architecture:</p>
+
+<h3 id="1-primarydb-global"><strong>1. <code class="language-plaintext highlighter-rouge">primary.db</code> (global)</strong></h3>
+<p>Stores:</p>
+<ul>
+  <li>Canvas student IDs</li>
+  <li>Submission metadata</li>
+  <li>Sanitized LaTeX</li>
+  <li>PDF render paths</li>
+  <li>Human review decisions</li>
+  <li>Assignment linkage</li>
+</ul>
+
+<h3 id="2-evaluationsdb-global"><strong>2. <code class="language-plaintext highlighter-rouge">evaluations.db</code> (global)</strong></h3>
+<p>Located at:</p>
+
+<p>data/ai_outputs/evaluations.db</p>
+
+<p>Contains:</p>
+<ul>
+  <li>Multiple model evaluations per student (scoped by course_id + assignment_id)</li>
+  <li>Raw + structured AI outputs</li>
+  <li>Metadata (model version, parameters, timestamps)</li>
+  <li>Human reviews (linked to evaluations)</li>
+</ul>
+
+<p>This separation makes the system scalable, modular, and research-friendly.</p>
+
+<hr />
+
+<h2 id="️-directory-structure">🗂️ Directory Structure</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+latex_grader/
+├── config/
+│   ├── settings.yaml
+│   ├── db_config.yaml
+│   └── prompts/
+│       ├── expert/
+│       ├── personality/
+│       └── questions/
+│
+├── data/
+│   ├── incoming/
+│   ├── sanitized/
+│   ├── compiled_pdfs/
+│   ├── logs/
+│   └── ai_outputs/  # per-assignment evaluation DBs
+│
+├── evaluator/
+│   ├── prompt_builder.py
+│   ├── evaluator_openai.py
+│   ├── evaluator_ollama.py
+│   ├── dual_evaluator.py
+│   └── overseer_evaluator.py   # future expansion
+│
+├── preprocessor/
+│   ├── strip_preamble.py
+│   ├── sanitize_tex.py
+│   ├── compile_pdf.py
+│   └── utilities.py
+│
+├── reviewer_ui/
+│   ├── app.py
+│   ├── templates/
+│   └── static/
+│
+├── scripts/
+│   ├── run_all.py
+│   ├── seed_prompts.py
+│   ├── export_results.py
+│   └── upload_canvas.py
+│
+├── tests/
+├── requirements.txt
+├── LICENSE
+└── README.md
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="️-workflow">⚙️ Workflow</h2>
+
+<ol>
+  <li>
+    <p><strong>Submission Ingestion</strong><br />
+Student .tex → PII removed → sanitized → PDF compiled</p>
+  </li>
+  <li><strong>AI Evaluation</strong>
+    <ul>
+      <li>Multiple evaluator models run (OpenAI, Ollama, etc.)</li>
+      <li>Results stored in the assignment-specific evaluation DB</li>
+    </ul>
+  </li>
+  <li><strong>Human Review UI</strong>
+    <ul>
+      <li>Left: rendered student PDF</li>
+      <li>Right: editable AI-generated feedback</li>
+      <li>Save corrected results into <code class="language-plaintext highlighter-rouge">evaluations.db</code></li>
+    </ul>
+  </li>
+  <li><strong>Export &amp; LMS Integration</strong><br />
+Scripts can export summaries or upload results to Canvas.</li>
+</ol>
+
+<hr />
+
+<h2 id="-setup">🛠 Setup</h2>
+
+<p>python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt</p>
+
+<p>Make sure to have tectonic installed on the system (for macos)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+brew install tectonic
+
+</code></pre></div></div>
+
+<p>Install dependencies:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+pip install -r requirements.txt
+
+</code></pre></div></div>
+
+<p>For testing:
+#make some sample student .tex files (data/incoming/raw_submissions_XXX_YYY) and expert files (config/prompts/expert)
+use chatgpt to make these files..replace with actual student files when they come in..
+#then run the sanitize_and_ingest.py:
+python ./preprocessor/sanitize_and_ingest.py –course 123456 –assignment 987654</p>
+
+<p>preprocessor/santizie_and_ingest.py will create data/primary.db</p>
+
+<p>#if the question jsons aren’t created but instead there’s just a question .tex and an expert .tex then create the json
+python scripts/build_question_json.py –course 123456 –assignment 987654</p>
+
+<p>#test the prompt builder by adjusting the sample files and the assignment
+python -m scripts.test_prompt_builder</p>
+
+<p>#copy that into your favorite chatbot and see what it says</p>
+
+<p>#test the openai call using a sample submission 
+python -m scripts.test_openai_eval</p>
+
+<p>#run a batch process of everything with run_all.py (see run_all.py for more information on the tags)
+python ./scripts/run_all.py <br />
+        –course 123456 <br />
+        –assignment 987654 <br />
+        –model gpt-4.1-mini –progress off –run_some 2</p>
+
+<h1 id="moving-on-to-the-reviewer-stage">Moving on to the reviewer stage</h1>
+<p>python -m reviewer_ui.app</p>
+
+<p>#then go to: 
+http://localhost:5001/review/123456/987654/456780</p>
+
+<h1 id="next-steps">Next steps</h1>
+
+<ol>
+  <li>
+    <p>add in the ability to review with but ollama, and gemini would be good as well. also a summarizer would be nice to have too, not sure how to do that - this might be overseer_evaluator. So probably just need to build a script that compiles all of that, judges the models, and provides and update overseer evaluation.</p>
+  </li>
+  <li>
+    <p>also it would be nice to consider some filter mechanism for multiple graders on the reviewer_ui.app. This could be as easy as a list of graders and how many submissions they’ll grade. 
+Also a status bar of how many submissions are left to grade.</p>
+  </li>
+</ol>
+
+<h1 id="longer-term-to-make-this-more-intergrated-with-canvas">Longer term to make this more intergrated with Canvas.</h1>
+<p>Create a full pipeline, where submissions are pulled from canvas into raw_submissions_course_assignment. then run the sanitize and ingestion, build question and prompt, then run_all.py, then the reviewer, then the graders do their thing, then push the results back to canvas.</p>
+
+<h2 id="notes">Notes:</h2>
+<ol>
+  <li>Assume FIELD_ORDER and FIELD_TYPES in review.js are the same as given in /config/prompts/personality/base.json in the “output_format_xml”</li>
+  <li>To compile the questions to a pdf from just a basebones .tex file:
+chmod +x compile_fragments.sh
+./compile_fragments.sh ./config/prompts/expert
+./compile_fragments.sh ./config/prompts/questions</li>
+</ol>
+
+<hr />
+
+<h2 id="-license">📌 License</h2>
+
+<p>See the included <code class="language-plaintext highlighter-rouge">LICENSE</code> file.</p>
+
+<hr />
+
+<p>This project is designed to be modular, scalable, and suitable for large courses or research experiments involving multiple AI models.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">BOBPE</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Bobby Hodgkinson</li><li><a class="u-email" href="mailto:hodgkinr@gmail.com">hodgkinr@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.linkedin.com/in/bobby-hodgkinson-b6481a24"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">bobby-hodgkinson-b6481a24</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>BOt-Based Personalized Education &amp; Productivity Enhancement</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BOBPE | AI Learning Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "cu-gold": "#CFB87C",
+                        "cu-black": "#000000",
+                        "on-secondary-fixed": "#002020",
+                        "surface-container-highest": "#e0e3e6",
+                        "on-surface": "#191c1e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#20005f",
+                        "tertiary-fixed": "#e8deff",
+                        "surface-container": "#eceef1",
+                        "surface": "#f7f9fc",
+                        "secondary-fixed": "#79f6f5",
+                        "secondary-container": "#79f6f5",
+                        "on-secondary-fixed-variant": "#004f4f",
+                        "tertiary-fixed-dim": "#cdbdff",
+                        "on-primary": "#ffffff",
+                        "outline": "#727782",
+                        "primary-fixed-dim": "#a6c8ff",
+                        "surface-container-high": "#e6e8eb",
+                        "secondary-fixed-dim": "#59d9d9",
+                        "on-surface-variant": "#424751",
+                        "surface-bright": "#f7f9fc",
+                        "surface-tint": "#1c5fa8",
+                        "tertiary": "#4300b4",
+                        "surface-dim": "#d8dadd",
+                        "on-secondary-container": "#007070",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#a7c8ff",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#004787",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#5c20df",
+                        "surface-variant": "#e0e3e6",
+                        "inverse-on-surface": "#eff1f4",
+                        "on-error": "#ffffff",
+                        "background": "#f7f9fc",
+                        "outline-variant": "#c2c6d3",
+                        "primary-container": "#00539c",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#d5e3ff",
+                        "on-tertiary-fixed-variant": "#4f00d0",
+                        "primary": "#003c73",
+                        "on-tertiary-container": "#cebeff",
+                        "error-container": "#ffdad6",
+                        "secondary": "#006a6a",
+                        "inverse-primary": "#a6c8ff",
+                        "on-background": "#191c1e",
+                        "surface-container-low": "#f2f4f7",
+                        "inverse-surface": "#2d3133",
+                        "on-primary-fixed": "#001c3b"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .chat-scroll::-webkit-scrollbar { width: 4px; }
+        .chat-scroll::-webkit-scrollbar-track { background: transparent; }
+        .chat-scroll::-webkit-scrollbar-thumb { background: #e0e3e6; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Sidebar Navigation (SideNavBar Anchor) -->
+<aside class="h-screen w-64 fixed left-0 top-0 z-40 bg-[#f8faf8] dark:bg-[#191c1c] flex flex-col p-6 space-y-4">
+<div class="mb-4">
+<h1 class="text-lg font-bold text-[#191c1c] dark:text-[#cfb87c] font-headline">CU Boulder</h1>
+<p class="text-xs text-[#4c463a] dark:text-[#cec6b6] font-['Manrope'] tracking-wide">Intellectual Atrium</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-[#4c463a] dark:text-[#cec6b6] hover:bg-[#edeeed] dark:hover:bg-[#241a00] rounded-lg transition-transform duration-200 hover:translate-x-1 font-['Manrope'] text-sm font-medium tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span>Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#4c463a] dark:text-[#cec6b6] hover:bg-[#edeeed] dark:hover:bg-[#241a00] rounded-lg transition-transform duration-200 hover:translate-x-1 font-['Manrope'] text-sm font-medium tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+<span>Faculty Directory</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 bg-[#cfb87c] text-[#241a00] font-bold rounded-lg shadow-sm transition-transform duration-200 hover:translate-x-1 font-['Manrope'] text-sm tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
+<span>Research Grants</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#4c463a] dark:text-[#cec6b6] hover:bg-[#edeeed] dark:hover:bg-[#241a00] rounded-lg transition-transform duration-200 hover:translate-x-1 font-['Manrope'] text-sm font-medium tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span>Course Catalog</span>
+</a>
+</nav>
+<div class="mt-auto border-t border-[#f3f4f3] dark:border-[#241a00] pt-4 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-[#4c463a] dark:text-[#cec6b6] hover:bg-[#edeeed] dark:hover:bg-[#241a00] rounded-lg transition-transform duration-200 font-['Manrope'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span>Support</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#4c463a] dark:text-[#cec6b6] hover:bg-[#edeeed] dark:hover:bg-[#241a00] rounded-lg transition-transform duration-200 font-['Manrope'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+<span>Logout</span>
+</a>
+</div>
+</aside>
+<!-- Main Workspace -->
+<main class="ml-64 flex flex-col h-screen">
+<!-- Top Navigation (TopNavBar Anchor) -->
+<header class="bg-[#f8faf8] dark:bg-[#191c1c] sticky top-0 z-50 h-16 w-full">
+<div class="flex justify-between items-center w-full px-8 h-full max-w-[1440px] mx-auto relative">
+<div class="flex items-center gap-6">
+<span class="text-xl font-black text-[#191c1c] dark:text-[#cfb87c] tracking-tighter">CU Boulder</span>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-[#6e5d2a] dark:text-[#cfb87c] border-b-2 border-[#cfb87c] pb-1 font-['Manrope'] font-bold tracking-tight text-sm" href="#">Academics</a>
+<a class="text-[#4c463a] dark:text-[#cec6b6] hover:text-[#6e5d2a] dark:hover:text-[#cfb87c] transition-colors duration-300 pb-1 font-['Manrope'] font-bold tracking-tight text-sm" href="#">Research</a>
+<a class="text-[#4c463a] dark:text-[#cec6b6] hover:text-[#6e5d2a] dark:hover:text-[#cfb87c] transition-colors duration-300 pb-1 font-['Manrope'] font-bold tracking-tight text-sm" href="#">Campus Life</a>
+<a class="text-[#4c463a] dark:text-[#cec6b6] hover:text-[#6e5d2a] dark:hover:text-[#cfb87c] transition-colors duration-300 pb-1 font-['Manrope'] font-bold tracking-tight text-sm" href="#">Admissions</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-3 px-3 py-1.5 bg-surface-container rounded-lg border border-outline-variant/20">
+<span class="material-symbols-outlined text-outline text-sm" data-icon="search">search</span>
+<input class="bg-transparent border-none text-xs focus:ring-0 p-0 w-48" placeholder="Search insights..." type="text"/>
+</div>
+<button class="material-symbols-outlined text-[#4c463a] dark:text-[#cec6b6] hover:text-[#6e5d2a] transition-colors" data-icon="notifications">notifications</button>
+<button class="material-symbols-outlined text-[#4c463a] dark:text-[#cec6b6] hover:text-[#6e5d2a] transition-colors" data-icon="account_circle">account_circle</button>
+</div>
+<div class="bg-[#edeeed] dark:bg-[#241a00] h-[1px] w-full absolute bottom-0 left-0 opacity-20"></div>
+</div>
+</header>
+<!-- Content Area: Dual Sidebar Layout -->
+<div class="flex-1 flex overflow-hidden">
+<!-- Left: Chat History -->
+<aside class="w-72 bg-surface-container-low flex flex-col border-r border-transparent">
+<div class="p-6">
+<span class="text-cu-gold font-extrabold text-xs tracking-widest uppercase mb-4 block">Recent Journeys</span>
+<div class="space-y-3">
+<button class="w-full text-left p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:translate-x-1 transition-all duration-200">
+<p class="text-sm font-semibold text-on-surface truncate">Introduction to Wave Functions</p>
+<p class="text-[10px] text-outline mt-1 italic">2 hours ago</p>
+</button>
+<button class="w-full text-left p-3 rounded-xl hover:bg-surface-container-high transition-all">
+<p class="text-sm font-medium text-on-surface-variant truncate">Schrödinger's Cat Paradox</p>
+<p class="text-[10px] text-outline mt-1">Yesterday</p>
+</button>
+<button class="w-full text-left p-3 rounded-xl hover:bg-surface-container-high transition-all">
+<p class="text-sm font-medium text-on-surface-variant truncate">Linear Algebra for Physics</p>
+<p class="text-[10px] text-outline mt-1">3 days ago</p>
+</button>
+</div>
+</div>
+<div class="mt-auto p-6 bg-gradient-to-t from-surface-container-high to-transparent">
+<div class="p-4 bg-cu-gold/10 rounded-2xl border border-cu-gold/20">
+<span class="material-symbols-outlined text-cu-gold mb-2 block" data-icon="auto_awesome">auto_awesome</span>
+<p class="text-xs font-bold text-cu-black mb-1">Knowledge Streak</p>
+<div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-cu-gold w-3/4"></div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Center: Interactive Chat -->
+<section class="flex-1 flex flex-col bg-surface overflow-hidden relative">
+<!-- Chat Feed -->
+<div class="flex-1 overflow-y-auto p-8 chat-scroll space-y-8">
+<!-- User Message -->
+<div class="flex justify-end items-start gap-4">
+<div class="max-w-[80%] bg-cu-black p-4 rounded-2xl rounded-tr-none shadow-md">
+<p class="text-white text-sm leading-relaxed">
+                                Can you explain the Heisenberg Uncertainty Principle using a real-world analogy? I'm struggling with the trade-off between position and momentum.
+                            </p>
+</div>
+</div>
+<!-- AI Response -->
+<div class="flex justify-start items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-cu-black flex items-center justify-center shrink-0 border border-cu-gold">
+<span class="material-symbols-outlined text-cu-gold text-sm" data-icon="smart_toy">smart_toy</span>
+</div>
+<div class="max-w-[85%] space-y-4">
+<div class="bg-surface-container-lowest p-6 rounded-2xl rounded-tl-none shadow-sm border border-outline-variant/10">
+<p class="text-on-surface text-sm leading-relaxed mb-4">
+                                    Think of a moving sports car. To find its exact position at a specific millisecond, you'd need a super high-speed camera with a very fast shutter speed (a flash of light). 
+                                </p>
+<div class="bg-cu-black p-4 rounded-xl font-mono text-xs text-cu-gold border-l-4 border-cu-gold">
+                                    Δx * Δp ≥ ħ / 2
+                                </div>
+<p class="text-on-surface text-sm leading-relaxed mt-4">
+                                    But that flash of light is actually made of photons. In the quantum world, those photons are like huge beach balls hitting our "sports car" (the electron). The act of measuring where it is actually knocks it off course, changing its momentum!
+                                </p>
+</div>
+<!-- AI Suggested Actions -->
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 bg-cu-gold text-cu-black text-xs font-bold rounded-full transition-all flex items-center gap-2 hover:bg-cu-black hover:text-cu-gold border border-transparent hover:border-cu-gold">
+<span class="material-symbols-outlined text-sm" data-icon="refresh">refresh</span>
+                                    Explain this in a different way
+                                </button>
+<button class="px-4 py-2 bg-surface-container-high hover:bg-cu-gold text-on-surface text-xs font-bold rounded-full transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="quiz">quiz</span>
+                                    Give me a practice problem
+                                </button>
+<button class="px-4 py-2 bg-surface-container-high hover:bg-error-container text-error text-xs font-bold rounded-full transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="help_center">help_center</span>
+                                    I'm confused about...
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Input Zone -->
+<div class="p-6 bg-surface/80 backdrop-blur-md">
+<div class="max-w-4xl mx-auto relative">
+<div class="bg-surface-container-lowest rounded-2xl shadow-lg border border-outline-variant/20 p-2 flex items-end gap-2 group focus-within:ring-2 ring-cu-gold/40 transition-all">
+<button class="p-3 text-outline hover:text-cu-black transition-colors">
+<span class="material-symbols-outlined" data-icon="attach_file">attach_file</span>
+</button>
+<textarea class="flex-1 border-none focus:ring-0 text-sm py-3 min-h-[50px] max-h-32 resize-none bg-transparent" placeholder="Ask your digital mentor anything..." rows="1"></textarea>
+<button class="bg-cu-black hover:bg-cu-gold text-cu-gold hover:text-cu-black p-3 rounded-xl transition-all active:scale-95 flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</div>
+<div class="mt-3 flex justify-center gap-6">
+<span class="text-[10px] text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-cu-gold" data-icon="verified">verified</span>
+                                CU-verified Insights
+                            </span>
+<span class="text-[10px] text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-cu-gold" data-icon="history_edu">history_edu</span>
+                                Intellectual Archive Active
+                            </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Right: Contextual Hub (Asymmetric Detail) -->
+<aside class="w-80 bg-surface-container-low p-6 overflow-y-auto chat-scroll border-l border-transparent">
+<div class="space-y-8">
+<!-- Current Concept Card -->
+<section>
+<h3 class="text-headline font-bold text-sm text-on-surface mb-4">Active Concept</h3>
+<div class="bg-cu-black rounded-2xl p-5 shadow-sm overflow-hidden relative group">
+<div class="absolute -right-4 -top-4 w-16 h-16 bg-cu-gold/10 rounded-full blur-2xl group-hover:bg-cu-gold/20 transition-all"></div>
+<span class="inline-block px-2 py-1 rounded bg-cu-gold/20 text-cu-gold text-[10px] font-bold mb-3">PHYSICS 101</span>
+<h4 class="font-headline font-extrabold text-lg text-cu-gold leading-tight mb-2">Uncertainty Principle</h4>
+<p class="text-xs text-white/70 leading-relaxed mb-4">A fundamental limit to the precision with which certain pairs of physical properties can be known.</p>
+<button class="text-cu-gold text-xs font-bold flex items-center gap-1 hover:underline">
+                                View Full Map <span class="material-symbols-outlined text-xs" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Related Topics (Bento Style) -->
+<section>
+<h3 class="text-headline font-bold text-sm text-on-surface mb-4">Interconnected Nodes</h3>
+<div class="grid grid-cols-1 gap-3">
+<div class="bg-surface-container rounded-xl p-3 flex items-center gap-3 hover:bg-cu-gold/10 transition-colors cursor-pointer border border-transparent hover:border-cu-gold/30">
+<div class="w-10 h-10 rounded-lg bg-cu-black flex items-center justify-center text-cu-gold">
+<span class="material-symbols-outlined" data-icon="waves">waves</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface">Wave-Particle Duality</p>
+<p class="text-[10px] text-outline">Prerequisite</p>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-3 flex items-center gap-3 hover:bg-cu-gold/10 transition-colors cursor-pointer border border-transparent hover:border-cu-gold/30">
+<div class="w-10 h-10 rounded-lg bg-cu-black flex items-center justify-center text-cu-gold">
+<span class="material-symbols-outlined" data-icon="functions">functions</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface">Matrix Mechanics</p>
+<p class="text-[10px] text-outline">Related Advanced</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Resource Card -->
+<section class="bg-cu-black p-5 rounded-2xl relative overflow-hidden group border border-cu-gold/20">
+<img alt="Abstract particle visualization" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiEsUE1yMjAIeS2GJ-2GZQfbM-frJVo2whAN02pmCnpFGMMcEbsNoC2bumjLzcdUcVL-OaER2MMSidfCzcjHfYflihRvBGLZADASSGuZCIsOL51OVFHZ3HTV7Z4wKrmaIAWAHCtG9rQnI8Xa1r7zTlwjdr65fhld6g1YjtSmsXyd4defxQ7_ZCBXgQX_A-pZ-aNNuk5SvTrwil6w35uaoJiV5jdEVV330BI4KRNYeMUijJAzquDWj4XW5CyHDENOyvM8nbtPBNPjE"/>
+<div class="relative z-10">
+<h4 class="text-cu-gold font-bold text-sm mb-2">Simulate the Experiment</h4>
+<p class="text-white/60 text-[11px] mb-4">Run a virtual double-slit experiment to see the principle in action.</p>
+<button class="w-full py-2.5 bg-cu-gold text-cu-black text-xs font-black rounded-lg shadow-lg active:scale-95 transition-all">Launch Simulation</button>
+</div>
+</section>
+</div>
+</aside>
+</div>
+</main>
+</body></html>

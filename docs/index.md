@@ -85,6 +85,8 @@ AI literacy initiatives focused on confidence, transparency, and responsible eng
 
 BOBPE is not a single tool or platform. It is a **coherent ecosystem** of instructional practices, tools, and workflows designed around established learning science and real institutional constraints.
 
+This ecosystem also includes a broader educational AI pipeline spanning [Discovery](projects/discovery/discovery.md), [Forward LMS](projects/forward-lms/forward-lms.md), and [AI Robustness Audit](projects/audit/audit.md), connecting semantic exploration, learner-facing delivery, and course improvement.
+
 Across all projects, AI is treated as:
 - A support for understanding, not a shortcut
 - A way to scale high-impact practices, not automate learning

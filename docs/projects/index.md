@@ -11,6 +11,28 @@ Projects are organized by primary audience, though many span multiple contexts.
 
 ---
 
+## Educational AI Pipeline
+
+These projects are part of a broader educational AI pipeline that moves from content structuring, to semantic discovery, to learner-facing delivery, and finally to auditing and improvement.
+
+- [Discovery](discovery/discovery.md)
+
+The semantic search and exploration layer of the platform. Discovery helps users find relevant courses, concepts, and learning materials through embeddings, concept graphs, and source-aware retrieval.
+
+---
+
+- [Forward LMS](forward-lms/forward-lms.md)
+
+A lightweight course-generation and delivery system that turns structured educational content into modules, lesson pages, quizzes, media-rich content, and learner-facing instructional experiences.
+
+---
+
+- [AI Robustness Audit](audit/audit.md)
+
+An AI-informed course review system that helps instructors evaluate educational design and assessment robustness, with particular attention to where assignments may or may not remain meaningful in the age of generative AI.
+
+---
+
 ## For Students
 
 - [Concept Inventory & Socratic Tutor Bots](concept-inventory-bots/concept-inventory-bots.md)

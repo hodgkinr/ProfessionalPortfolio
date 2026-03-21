@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Github Chatbot | BOBPE</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Github Chatbot" />
+<meta name="author" content="Bobby Hodgkinson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="BOt-Based Personalized Education &amp; Productivity Enhancement" />
+<meta property="og:description" content="BOt-Based Personalized Education &amp; Productivity Enhancement" />
+<link rel="canonical" href="http://0.0.0.0:4000/projects/gemini-parent-chatbot/gemini-parent-chatbot.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/projects/gemini-parent-chatbot/gemini-parent-chatbot.html" />
+<meta property="og:site_name" content="BOBPE" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Github Chatbot" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Bobby Hodgkinson"},"description":"BOt-Based Personalized Education &amp; Productivity Enhancement","headline":"Github Chatbot","url":"http://0.0.0.0:4000/projects/gemini-parent-chatbot/gemini-parent-chatbot.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="BOBPE" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">BOBPE</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/mission.html">Mission</a><a class="page-link" href="/projects/">Projects</a><a class="page-link" href="/contact.html">Contact</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Github Chatbot</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="local-gemini-chatbot-for-parents">Local Gemini Chatbot for Parents</h1>
+
+<h2 id="project-summary">Project Summary</h2>
+
+<p>The Local Gemini Chatbot for Parents project provides a locally deployable AI chatbot designed to support AI literacy, exploration, and experimentation in a privacy-conscious environment. Built using Python, Flask, and Google’s Gemini API, the system runs entirely on a local machine or controlled development environment, allowing users to interact with a modern AI model without relying on opaque, cloud-hosted consumer interfaces.</p>
+
+<p>This project supports the BOBPE mission by extending bot-based personalized education beyond formal classrooms and into family, community, and public learning contexts.</p>
+
+<hr />
+
+<h2 id="educational-problem-addressed">Educational Problem Addressed</h2>
+
+<p>Parents and members of the public are increasingly aware that AI tools are shaping education, work, and daily life, yet many lack opportunities to explore these systems in a transparent and low-risk setting. Commercial AI platforms often obscure how data is stored, how responses are generated, and what controls users actually have.</p>
+
+<p>This project addresses the need for:</p>
+<ul>
+  <li>Trustworthy, hands-on AI literacy experiences</li>
+  <li>Clear boundaries around privacy and data ownership</li>
+  <li>Opportunities to explore AI capabilities without institutional barriers</li>
+</ul>
+
+<hr />
+
+<h2 id="how-ai-is-used">How AI Is Used</h2>
+
+<p>The chatbot uses Google’s Gemini model to:</p>
+<ul>
+  <li>Respond to user questions in real time</li>
+  <li>Stream responses incrementally for a conversational experience</li>
+  <li>Support Markdown-formatted outputs, including code blocks</li>
+  <li>Enable reflective exploration of AI behavior and limitations</li>
+</ul>
+
+<p>The system is intentionally general-purpose, allowing users to ask questions, test prompts, and explore how AI responds across domains.</p>
+
+<hr />
+
+<h2 id="privacy-and-local-deployment">Privacy and Local Deployment</h2>
+
+<p>A central design goal of this project is transparency and control:</p>
+
+<ul>
+  <li>The application runs locally using Flask</li>
+  <li>Chat transcripts are stored in a local SQLite database</li>
+  <li>Users can view, delete, and export their own chat history</li>
+  <li>No external logging or analytics are required beyond the API call itself</li>
+  <li>The system can be run in a local Python environment or a controlled Codespace</li>
+</ul>
+
+<p>This makes the project well-suited for demonstrations, workshops, and home use where privacy and trust are paramount.</p>
+
+<hr />
+
+<h2 id="example-use-cases">Example Use Cases</h2>
+
+<ul>
+  <li>Parents exploring how AI tools respond to homework-related questions</li>
+  <li>Families discussing appropriate and inappropriate AI use together</li>
+  <li>Community workshops on AI literacy and responsible use</li>
+  <li>Demonstrations of prompt design and response variability</li>
+  <li>Conversations about data privacy, limitations, and guardrails</li>
+</ul>
+
+<hr />
+
+<h2 id="deployment-status">Deployment Status</h2>
+
+<p><strong>Status:</strong> Active demonstration tool<br />
+The system is used as part of AI literacy workshops and community discussions, and serves as a reference implementation for locally controlled AI exploration.</p>
+
+<hr />
+
+<h2 id="artifacts-and-links">Artifacts and Links</h2>
+<h3 id="example-ui-walkthrough-video">Example UI Walkthrough Video</h3>
+
+<iframe src="https://drive.google.com/file/d/17TpmM2Ik7M4Bz_SNP4mkohsUsKqEzrTF/view?usp=sharing" width="700" height="394" allow="autoplay" style="max-width: 100%;">
+</iframe>
+
+<ul>
+  <li><a href="https://github.com/hodgkinr/basic-google-chat">GitHub repository</a></li>
+</ul>
+
+<hr />
+
+<h2 id="alignment-with-bobpe-mission">Alignment with BOBPE Mission</h2>
+
+<p>This project extends the BOBPE vision of bot-based personalized education into public and family-facing contexts. By prioritizing transparency, local control, and hands-on exploration, it supports AI literacy and trust-building while demonstrating how modern AI systems can be engaged responsibly outside of formal instructional settings.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">BOBPE</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Bobby Hodgkinson</li><li><a class="u-email" href="mailto:hodgkinr@gmail.com">hodgkinr@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.linkedin.com/in/bobby-hodgkinson-b6481a24"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">bobby-hodgkinson-b6481a24</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>BOt-Based Personalized Education &amp; Productivity Enhancement</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

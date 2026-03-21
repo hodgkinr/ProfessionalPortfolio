@@ -129,6 +129,34 @@ These represent broader research or organizational frameworks that will be incor
 
 ---
 
+## Local Preview
+
+This site can be previewed locally with Docker.
+
+From the repo root, run:
+
+```bash
+cd /path/to/ProfessionalPortfolio && docker run --rm -it -p 4000:4000 -v "$PWD/docs":/srv/jekyll jekyll/jekyll:pages bash -lc "gem install webrick && jekyll serve --host 0.0.0.0 --force_polling"
+````
+
+Then open:
+
+```text
+http://127.0.0.1:4000
+```
+
+Press `Ctrl+C` in the terminal to stop the server.
+
+Notes:
+
+* The site source lives in `docs/`
+* The Jekyll config is `docs/_config.yml`
+* This repo does not currently include a local Bundler setup, so Docker is the simplest preview method
+
+See the file [LOCAL_PREVIEW.md](LOCAL_PREVIEW.md)
+
+---
+
 ## Status
 
 BOBPE is an active, evolving initiative. Projects range from classroom deployments to research prototypes and public-facing outreach. Each project page documents its scope, audience, and maturity level.

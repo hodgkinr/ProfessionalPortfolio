@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Exclude | BOBPE</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Exclude" />
+<meta name="author" content="Bobby Hodgkinson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="BOt-Based Personalized Education &amp; Productivity Enhancement" />
+<meta property="og:description" content="BOt-Based Personalized Education &amp; Productivity Enhancement" />
+<link rel="canonical" href="http://0.0.0.0:4000/projects/personalized-feedback/raw_readme.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/projects/personalized-feedback/raw_readme.html" />
+<meta property="og:site_name" content="BOBPE" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Exclude" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Bobby Hodgkinson"},"description":"BOt-Based Personalized Education &amp; Productivity Enhancement","headline":"Exclude","url":"http://0.0.0.0:4000/projects/personalized-feedback/raw_readme.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="BOBPE" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">BOBPE</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/mission.html">Mission</a><a class="page-link" href="/projects/">Projects</a><a class="page-link" href="/contact.html">Contact</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Exclude</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="bobpe--buffalo-grading-workflow--main-readme">BOBPE / BUFFALO grading workflow — main README</h2>
+
+<p>For docker addition see: https://chatgpt.com/share/e/68d5e489-93a4-8009-9f93-38ae9ab596a9</p>
+
+<p>docker compose up -d –build
+docker compose down</p>
+
+<p>to run both: 
+docker compose -f docker-compose.review.yml up -d –build
+docker compose -f docker-compose.step3.yml up -d –build 
+docker compose -f docker-compose.rebecca_math.yml up -d –build</p>
+
+<p>docker compose -f docker-compose.caddy.yml up -d –build</p>
+
+<blockquote>
+  <blockquote>
+    <p>ipconfig getifaddr en0<br />
+http://10.235.142.252:8080/code_review
+http://10.235.142.252:8080/concept_review
+/ralphie_math</p>
+  </blockquote>
+</blockquote>
+
+<p>step 3 multiple choice grader runs on 5006:5003 
+and with caddy /concept_review</p>
+
+<p>code reviewer runs on 5004:5001
+and with caddy /code_review</p>
+
+<p>rebecca math runs on 5005:5002
+and with caddy /ralphie_math_guide</p>
+
+<p>docker compose -f docker-compose.review.yml down<br />
+docker compose -f docker-compose.step3.yml down
+docker compose -f docker-compose.rebecca_math.yml down
+docker compose -f docker-compose.caddy.yml down</p>
+
+<h2 id="to-run-multiple-concept_review_1-and-concept_review_2">To run multiple /concept_review_1 and /concept_review_2</h2>
+
+<p>update the .jsons in docker-compose.step3-2 to point to the right default_jsons:
+    environment:
+      - DEFAULTS_FILE=/app/config/PC_1_2.json
+      - PYTHONUNBUFFERED=1
+    command: [“python”,”main.py”,”–step”,”3”,”–quiz_id”,”503155”]</p>
+
+<p>docker compose -f docker-compose.step3-2.yml up -d –build 
+docker compose -f docker-compose.caddy2.yml up -d –build</p>
+
+<h2 id="october-1-2025-concept-quiz-am1">October 1 2025: concept quiz: AM.1</h2>
+<blockquote>
+  <blockquote>
+    <p>python main.py –quiz_id 503158 –step 1</p>
+  </blockquote>
+</blockquote>
+
+<p>update 2_Evaluation/default_jsons/1030_Fa2002: AM_1_1 and AM_2_2 (this could be automated with a little thinking)
+also update docker-compose.caddy2.yml to point to those jsons</p>
+
+<p>(this takes about 2 minutes for an initial run)</p>
+<blockquote>
+  <blockquote>
+    <p>python main.py –quiz_id 503158 –step 2 –skip-existing-extract –skip-existing-eval –eval-limit 5 –defaults-file ./default_jsons/1030_Fa2025/AM_1_1.json</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>python main.py –quiz_id 503158 –step 2 –skip-existing-extract –skip-existing-eval –eval-limit 5 –defaults-file ./default_jsons/1030_Fa2025/AM_2_2.json</p>
+  </blockquote>
+</blockquote>
+
+<p>manually check the created _evaluated_db files OR</p>
+<blockquote>
+  <blockquote>
+    <p>docker compose -f docker-compose.step3-2.yml up -d –build</p>
+  </blockquote>
+</blockquote>
+
+<p>check localhost:5003 and localhost:5004 to make sure the AI did ok..then (might not need to bring down docker?)</p>
+<blockquote>
+  <blockquote>
+    <p>docker compose -f docker-compose.step3-2.yml down</p>
+  </blockquote>
+</blockquote>
+
+<p>run again but without the –eval-limit 5 tag</p>
+
+<p>python main.py –quiz_id 503158 –step 2 –skip-existing-extract –skip-existing-eval –defaults-file ./default_jsons/1030_Fa2025/AM_1_1.json</p>
+
+<blockquote>
+  <blockquote>
+    <p>python main.py –quiz_id 503158 –step 2 –skip-existing-extract –skip-existing-eval –defaults-file ./default_jsons/1030_Fa2025/AM_2_2.json</p>
+  </blockquote>
+</blockquote>
+
+<p>then bring up the docker again 
+then bring up the caddy docker:
+docker compose -f docker-compose.caddy2.yml up -d –build</p>
+
+<p>confirm IP</p>
+<blockquote>
+  <blockquote>
+    <p>ipconfig getifaddr en0
+172.25.18.117/concept_review_1
+and
+172.25.18.117/concept_review_2</p>
+  </blockquote>
+</blockquote>
+
+<table>
+  <tbody>
+    <tr>
+      <td>This is useful: history</td>
+      <td>tail -20</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="to-return-submission-back-pc1">To return submission back. PC.1</h1>
+<p>(grade)
+run the pdf creator, and the combiner if multiple:</p>
+
+<blockquote>
+  <blockquote>
+    <p>python main.py –quiz_id 503155 –step 4 –defaults-file ./default_jsons/1030_Fa2025/PC_1_2.json
+python main.py –quiz_id 503155 –step 4 –defaults-file ./default_jsons/1030_Fa2025/PC_2_1.json
+if multiple
+python ./3_Dissemination/combine_same_named_pdfs.py –inputs 3_Dissemination/127598_output_pdfs_503155_Concept.PC.1.2 3_Dissemination/127598_output_pdfs_503155_Concept.PC.2.1 –output 3_Dissemination/127598_output_pdfs_503155_combined 
+the when ready.. change the POST_GRADE in upload_comment_improved.py 
+python main.py –quiz_id 503155 –step 5 –output-dir 3_Dissemination/127598_output_pdfs_503155_combined</p>
+  </blockquote>
+</blockquote>
+
+<p>10/3/2025 for AM.1</p>
+<blockquote>
+  <blockquote>
+    <p>python main.py –step 4 –defaults-file ./default_jsons/1030_Fa2025/AM_1_1.json
+python main.py –step 4 –defaults-file ./default_jsons/1030_Fa2025/AM_2_2.json
+python ./3_Dissemination/combine_same_named_pdfs.py –inputs 3_Dissemination/127598_output_pdfs_503158_Concept.AM.1.1 3_Dissemination/127598_output_pdfs_503158_Concept.AM.2.2 –output 3_Dissemination/127598_output_pdfs_503158_combined 
+python main.py –quiz_id 503158 –step 5 –output-dir 3_Dissemination/127598_output_pdfs_503158_combined</p>
+  </blockquote>
+</blockquote>
+
+<p>This document describes how to use <code class="language-plaintext highlighter-rouge">main.py</code> as a one-flag runner for the entire BOBPE/Buffalo grading workflow, and it references the key scripts used in each of the subdirectories: <code class="language-plaintext highlighter-rouge">0_Generation</code>, <code class="language-plaintext highlighter-rouge">1_Extraction</code>, <code class="language-plaintext highlighter-rouge">2_Evaluation</code>, and <code class="language-plaintext highlighter-rouge">3_Dissemination</code>.</p>
+
+<p>Keep this file in the repository root as <code class="language-plaintext highlighter-rouge">readme_main.md</code>.</p>
+
+<h2 id="purpose-and-high-level-workflow">Purpose and high-level workflow</h2>
+
+<p>This repo implements a multi-stage workflow for converting concept/quiz definitions into Canvas quizzes, extracting student responses, evaluating responses with an AI-powered evaluator, letting human reviewers refine evaluations, and producing/uploading feedback (PDFs/comments) back to Canvas.</p>
+
+<p>Top-level steps (exposed through <code class="language-plaintext highlighter-rouge">main.py --step &lt;n&gt;</code>):</p>
+<ul>
+  <li>Step 0 — Build quiz from a concept JSON (generate HTML, optionally upload to Canvas)</li>
+  <li>Step 1 — Extraction: pull student responses from Canvas into a local DB</li>
+  <li>Step 2 — Evaluation: run the evaluator to produce organized and evaluated databases</li>
+  <li>Step 3 — Review: run the review UI (human review) and a queue manager in parallel</li>
+  <li>Step 4 — Dissemination: generate PDFs for student feedback (and optionally include expert explanations / full review)</li>
+  <li>Step 5 — Upload: push feedback (comments) back to Canvas</li>
+</ul>
+
+<p>The single-entry point is <code class="language-plaintext highlighter-rouge">main.py</code> which aggregates arguments and invokes the appropriate scripts in subfolders.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li>Python 3.11 is used by the project (code compiled with 3.11 pyc files present). Adjust for your environment.</li>
+  <li>Install dependencies listed in <code class="language-plaintext highlighter-rouge">requirements.txt</code>:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> venv .venv
+<span class="nb">source</span> .venv/bin/activate
+python <span class="nt">-m</span> pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
+</code></pre></div></div>
+
+<ul>
+  <li>Create a <code class="language-plaintext highlighter-rouge">.env</code> file in the repo root (or set environment variables) containing at least <code class="language-plaintext highlighter-rouge">COURSE_ID</code>. <code class="language-plaintext highlighter-rouge">CANVAS_BASE</code> can be set as well; otherwise a default is used.</li>
+</ul>
+
+<p>.env example:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>COURSE_ID=127598
+CANVAS_BASE=https://canvas.colorado.edu
+</code></pre></div></div>
+
+<h2 id="where-defaults-live">Where defaults live</h2>
+
+<p><code class="language-plaintext highlighter-rouge">main.py</code> exposes a <code class="language-plaintext highlighter-rouge">DEFAULTS</code> dict near the top of the file for convenience. Common defaults you may find there:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">CANVAS_BASE</code> — default Canvas base URL</li>
+  <li><code class="language-plaintext highlighter-rouge">JSON_PATH</code> — path to the concept JSON used by steps 0/2/3</li>
+  <li><code class="language-plaintext highlighter-rouge">DB_FILE</code>, <code class="language-plaintext highlighter-rouge">ORGANIZED_DB</code>, <code class="language-plaintext highlighter-rouge">EVALUATED_DB</code>, <code class="language-plaintext highlighter-rouge">REVIEWED_DB</code> — default DB paths used by evaluation and review</li>
+  <li><code class="language-plaintext highlighter-rouge">OUTPUT_DIR</code> — default output directory for generated PDFs</li>
+  <li><code class="language-plaintext highlighter-rouge">INCLUDE_EXPERT</code>, <code class="language-plaintext highlighter-rouge">INCLUDE_FULL_REVIEW</code> — defaults controlling PDF content inclusion</li>
+</ul>
+
+<p>When running <code class="language-plaintext highlighter-rouge">main.py</code> you can override these defaults by passing explicit CLI flags.</p>
+
+<h2 id="important-helper-functions-in-mainpy">Important helper functions in <code class="language-plaintext highlighter-rouge">main.py</code></h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">quiz_url(quiz_id, dotenv_path)</code> — builds the Canvas quiz URL from <code class="language-plaintext highlighter-rouge">CANVAS_BASE</code> and <code class="language-plaintext highlighter-rouge">COURSE_ID</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">db_path(quiz_id, dotenv_path)</code> — default path for extracted quiz responses DB in <code class="language-plaintext highlighter-rouge">./1_Extraction/quiz_responses/</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">org_db_path(quiz_id, dotenv_path)</code> — default organized DB path in <code class="language-plaintext highlighter-rouge">./2_Evaluation/evaluator_dbs/</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">eval_db_path(quiz_id, dotenv_path)</code> — default evaluated DB path in <code class="language-plaintext highlighter-rouge">./2_Evaluation/evaluator_dbs/</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">html_from_json(json_path)</code> — helper to map a JSON file to the generated HTML path.</li>
+</ul>
+
+<p>These are used by the step helpers in <code class="language-plaintext highlighter-rouge">main.py</code> to calculate file paths and URLs when not overridden on the command line.</p>
+
+<h2 id="running-mainpy--basic-usage">Running <code class="language-plaintext highlighter-rouge">main.py</code> — basic usage</h2>
+
+<p>Run the script from the repo root. <code class="language-plaintext highlighter-rouge">main.py</code> exposes a <code class="language-plaintext highlighter-rouge">--step</code> integer and a handful of common flags. The general idea is to select a quiz id once then increment the <code class="language-plaintext highlighter-rouge">--step</code> as you progress.</p>
+
+<p>Example: build HTML from a concept JSON (step 0):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python main.py <span class="nt">--step</span> 0 <span class="nt">--json</span> ./0_Generation/Course_Folders/ASEN1030_Fa2025/CT.2/Concept.CT.2.2.json
+</code></pre></div></div>
+
+<p>Example: extract a quiz from Canvas (step 1):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python main.py <span class="nt">--quiz_id</span> 494588 <span class="nt">--step</span> 1
+</code></pre></div></div>
+
+<p>Example: evaluate (step 2) — evaluated DB paths and options can be overridden</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python main.py <span class="nt">--quiz_id</span> 494588 <span class="nt">--step</span> 2 <span class="nt">--skip-existing-extract</span> <span class="nt">--skip-existing-eval</span> <span class="nt">--eval-limit</span> 5
+</code></pre></div></div>
+
+<p>Example: run review UI and queue manager in parallel (step 3)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python main.py <span class="nt">--quiz_id</span> 494588 <span class="nt">--step</span> 3
+</code></pre></div></div>
+
+<p>Example: generate PDFs (step 4)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python main.py <span class="nt">--step</span> 4 <span class="nt">--include-expert</span> <span class="nt">--include-full-review</span>
+</code></pre></div></div>
+
+<p>Example: upload comments to Canvas (step 5)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python main.py <span class="nt">--quiz_id</span> 494588 <span class="nt">--step</span> 5
+</code></pre></div></div>
+
+<p>Pass-through flags: any flags after a <code class="language-plaintext highlighter-rouge">--</code> are forwarded verbatim to the underlying script being invoked by <code class="language-plaintext highlighter-rouge">main.py</code>. Example:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python main.py <span class="nt">--quiz_id</span> 494588 <span class="nt">--step</span> 2 <span class="nt">--</span> <span class="nt">--some-underlying-flag</span> value
+</code></pre></div></div>
+
+<h2 id="step-by-step-script-references">Step-by-step script references</h2>
+
+<p>Below are the primary scripts that <code class="language-plaintext highlighter-rouge">main.py</code> calls for each step and what they do. Use these directly for development/troubleshooting if needed.</p>
+
+<ul>
+  <li>0_Generation (build Canvas-ready quiz html or batch convert JSONs)
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">json_to_canvas_html.py</code> — converts a concept JSON to an HTML template used to create the Canvas quiz.</li>
+      <li><code class="language-plaintext highlighter-rouge">create_quiz_from_html.py</code> — (optionally) takes the generated HTML and posts/creates a quiz in Canvas.</li>
+      <li><code class="language-plaintext highlighter-rouge">batch_json_to_html.py</code> — batch converts many JSONs to HTMLs.</li>
+    </ul>
+  </li>
+  <li>1_Extraction
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">one_stop_canvas_quiz_pull_improved.py</code> — preferred script to pull quiz submissions from Canvas for a specific quiz URL and store them locally in <code class="language-plaintext highlighter-rouge">./1_Extraction/quiz_responses/</code>.</li>
+      <li><code class="language-plaintext highlighter-rouge">one_stop_canvas_quiz_pull.py</code> — earlier/alternate version.</li>
+    </ul>
+  </li>
+  <li>2_Evaluation
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">evaluator.py</code> — main evaluation pipeline. Inputs:
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">--concept-path</code> path to the concept JSON</li>
+          <li><code class="language-plaintext highlighter-rouge">--db_file</code> path to extracted quiz DB</li>
+          <li><code class="language-plaintext highlighter-rouge">--org_db</code> path to organized DB (output)</li>
+          <li><code class="language-plaintext highlighter-rouge">--eval_db</code> path to evaluated DB (output)</li>
+          <li><code class="language-plaintext highlighter-rouge">--skip-existing-extract</code>, <code class="language-plaintext highlighter-rouge">--skip-existing-eval</code>, <code class="language-plaintext highlighter-rouge">--eval-limit</code> control behavior</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">extract_mcq.py</code> — helper for multiple choice extraction.</li>
+      <li><code class="language-plaintext highlighter-rouge">student_to_expert.py</code> — helper for converting student responses into the input for an expert answer generator.</li>
+      <li><code class="language-plaintext highlighter-rouge">RPHF.py</code> — implements the reviewer / prompt heuristics for improving evaluator instructions (supervisor logic).</li>
+      <li><code class="language-plaintext highlighter-rouge">queue_manager.py</code> — lightweight manager that can auto-run <code class="language-plaintext highlighter-rouge">evaluator.py</code> when review/evaluation gaps meet thresholds. Used by step 3.</li>
+      <li><code class="language-plaintext highlighter-rouge">appV1.py</code> / <code class="language-plaintext highlighter-rouge">app.py</code> — web UI for human reviewers to inspect and modify model-generated expert answers and evaluations.</li>
+    </ul>
+
+    <p>All evaluation-related DBs and state are in <code class="language-plaintext highlighter-rouge">./2_Evaluation/evaluator_dbs/</code>.</p>
+  </li>
+  <li>3_Dissemination
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">generate_pdfs_mcq.py</code> — generate feedback PDFs per student/question. Has options to include expert explanations and full review information.</li>
+      <li><code class="language-plaintext highlighter-rouge">upload_comment.py</code> / <code class="language-plaintext highlighter-rouge">upload_comment_improved.py</code> — upload feedback/comments back to Canvas; <code class="language-plaintext highlighter-rouge">upload_comment_improved.py</code> is a newer version.</li>
+      <li>Fonts and styling for PDFs are in <code class="language-plaintext highlighter-rouge">3_Dissemination/Open_Sans/</code> and <code class="language-plaintext highlighter-rouge">3_Dissemination/static/</code>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="filedb-naming-conventions">File/DB naming conventions</h2>
+
+<ul>
+  <li>Extracted DBs and CSVs: <code class="language-plaintext highlighter-rouge">./1_Extraction/quiz_responses/{COURSE_ID}_quizzes_{QUIZ_ID}.db</code> and <code class="language-plaintext highlighter-rouge">.csv</code>.</li>
+  <li>Organized/evaluated/reviewed DBs: <code class="language-plaintext highlighter-rouge">./2_Evaluation/evaluator_dbs/{COURSE_ID}_organized_{QUIZ_ID}.db</code>, etc.</li>
+  <li>Generated PDFs output directory default: <code class="language-plaintext highlighter-rouge">./3_Dissemination/output_pdfs/</code> or per-run <code class="language-plaintext highlighter-rouge">OUTPUT_DIR</code> from <code class="language-plaintext highlighter-rouge">DEFAULTS</code>.</li>
+</ul>
+
+<h2 id="common-flags-and-options-overview">Common flags and options (overview)</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">--quiz_id</code> — the Canvas quiz id used to build URLs and db paths</li>
+  <li><code class="language-plaintext highlighter-rouge">--json</code> or <code class="language-plaintext highlighter-rouge">--concept-path</code> — the path to the concept JSON that defines questions and expert expectations</li>
+  <li><code class="language-plaintext highlighter-rouge">--org_db</code>, <code class="language-plaintext highlighter-rouge">--eval_db</code>, <code class="language-plaintext highlighter-rouge">--reviewed_db</code>, <code class="language-plaintext highlighter-rouge">--db_file</code> — explicit DB paths to override defaults</li>
+  <li><code class="language-plaintext highlighter-rouge">--skip-existing-extract</code> — avoid re-extracting when DB already exists</li>
+  <li><code class="language-plaintext highlighter-rouge">--skip-existing-eval</code> — skip re-evaluating items already evaluated</li>
+  <li><code class="language-plaintext highlighter-rouge">--eval-limit</code> — number of evaluations to run in one batch</li>
+  <li><code class="language-plaintext highlighter-rouge">--include-expert</code> / <code class="language-plaintext highlighter-rouge">--include-expert-explanations</code> — include AI expert text in generated PDFs</li>
+  <li><code class="language-plaintext highlighter-rouge">--include-full-review</code> — include full human review history in generated PDFs</li>
+</ul>
+
+<p>Refer to the top of <code class="language-plaintext highlighter-rouge">main.py</code> and the <code class="language-plaintext highlighter-rouge">evaluator.py</code>/<code class="language-plaintext highlighter-rouge">generate_pdfs_mcq.py</code> scripts for exact flag names and semantics.</p>
+
+<h2 id="troubleshooting--tips">Troubleshooting &amp; tips</h2>
+
+<ul>
+  <li>If a step can’t find a DB, verify <code class="language-plaintext highlighter-rouge">COURSE_ID</code> in <code class="language-plaintext highlighter-rouge">.env</code> or pass <code class="language-plaintext highlighter-rouge">--db_file</code> explicitly.</li>
+  <li>If Canvas requests fail, confirm <code class="language-plaintext highlighter-rouge">CANVAS_BASE</code> and <code class="language-plaintext highlighter-rouge">COURSE_ID</code> and that any required Canvas access tokens or authentication are configured in the environment or credential files used by the extraction scripts.</li>
+  <li>For flaky evaluation runs, increase logging in <code class="language-plaintext highlighter-rouge">evaluator.py</code> and inspect <code class="language-plaintext highlighter-rouge">./2_Evaluation/evaluator_dbs/</code> for partial outputs.</li>
+  <li>When running step 3, <code class="language-plaintext highlighter-rouge">main.py</code> launches <code class="language-plaintext highlighter-rouge">queue_manager.py</code> and <code class="language-plaintext highlighter-rouge">appV1.py</code> in parallel. Close the UI to stop the queue manager; check process logs if the QM keeps running.</li>
+</ul>
+
+<h2 id="development-notes-and-possible-improvements">Development notes and possible improvements</h2>
+
+<ul>
+  <li>Automate environment creation (venv/conda) and pin dependencies in <code class="language-plaintext highlighter-rouge">requirements.txt</code>.</li>
+  <li>Add small unit tests for helper functions in <code class="language-plaintext highlighter-rouge">main.py</code> (path builders, URL builders) to prevent regressions.</li>
+  <li>Add more robust error reporting and a graceful shutdown for the queue manager / UI pairing.</li>
+  <li>Consider a <code class="language-plaintext highlighter-rouge">--dry-run</code> mode in <code class="language-plaintext highlighter-rouge">main.py</code> to print the commands that would be run without executing them. (Parts of <code class="language-plaintext highlighter-rouge">main.py</code> already accept <code class="language-plaintext highlighter-rouge">dry_run</code> flags.)</li>
+</ul>
+
+<h2 id="where-to-look-for-more-details">Where to look for more details</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">main.py</code> — primary orchestrator and authoritative source of the CLI interface and default values.</li>
+  <li><code class="language-plaintext highlighter-rouge">2_Evaluation/evaluator.py</code> — core evaluation logic; read header comments and argument parsing to see full behavior.</li>
+  <li><code class="language-plaintext highlighter-rouge">3_Dissemination/generate_pdfs_mcq.py</code> — PDF generation options and templates.</li>
+</ul>
+
+<h2 id="quick-checklist--mapping-user-request-to-artifact">Quick checklist — mapping user request to artifact</h2>
+
+<ul>
+  <li>Requested: “very detailed readme file for the overall operation starting with main.py and referencing relevant scripts” — Done: <code class="language-plaintext highlighter-rouge">readme_main.md</code> created in repo root.</li>
+</ul>
+
+<h2 id="final-notes">Final notes</h2>
+
+<p>Open <code class="language-plaintext highlighter-rouge">readme_main.md</code> for examples and actionable commands. If you’d like, I can:</p>
+
+<ul>
+  <li>Add a short quickstart script that sets up a venv and runs step 1 for a test quiz.</li>
+  <li>Expand <code class="language-plaintext highlighter-rouge">readme_main.md</code> with screenshots or a diagram of data flow.</li>
+  <li>Auto-generate a smaller <code class="language-plaintext highlighter-rouge">README</code> targeted at instructors that only shows the minimal set of commands to grade a single assignment.</li>
+</ul>
+
+<hr />
+<p>Generated by repository tooling guidance; update the examples above if your environment or file layout changes.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">BOBPE</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Bobby Hodgkinson</li><li><a class="u-email" href="mailto:hodgkinr@gmail.com">hodgkinr@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.linkedin.com/in/bobby-hodgkinson-b6481a24"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">bobby-hodgkinson-b6481a24</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>BOt-Based Personalized Education &amp; Productivity Enhancement</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

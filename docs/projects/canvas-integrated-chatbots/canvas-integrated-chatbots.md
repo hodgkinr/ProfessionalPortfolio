@@ -93,6 +93,7 @@ The system has been deployed in instructional settings and continues to evolve i
   style="max-width: 100%;">
 </iframe>
 
+<a class="video-link" href="https://youtu.be/EK9O8ufFlVI">Watch Demo on YouTube</a>
 
 ---
 

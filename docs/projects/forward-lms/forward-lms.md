@@ -58,7 +58,7 @@ Within the larger pipeline, it represents the point where content becomes course
   style="max-width: 100%;">
 </iframe>
 
-If the embedded player does not load, view the demo on YouTube: [LMS Demo](https://youtu.be/SskHYK2RwIY)
+If the embedded player does not load, view the demo on YouTube: <a class="video-link" href="https://youtu.be/SskHYK2RwIY">LMS Demo</a>
 
 ---
 

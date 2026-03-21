@@ -56,7 +56,7 @@ In this way, it serves as a bridge between behind-the-scenes content structuring
   style="max-width: 100%;">
 </iframe>
 
-If the embedded player does not load, view the demo on YouTube: [Semantic Search Demo](https://youtu.be/kOOsJB7AkGw)
+If the embedded player does not load, view the demo on YouTube: <a class="video-link" href="https://youtu.be/kOOsJB7AkGw">Semantic Search Demo</a>
 
 ---
 

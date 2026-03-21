@@ -51,41 +51,46 @@ BOBPE responds to this challenge by asking a simple question:
 
 ## Explore BOBPE by Audience
 
-### For Students
-Interactive tutors, feedback systems, and learning tools designed to support conceptual understanding, reflection, and self-regulated learning.
-
-**Featured areas include:**
-- [Concept Inventory & Socratic Tutor Bots](projects/concept-inventory-bots/concept-inventory-bots.md)
-- [Code Narration & Interview Review Platform](projects/code-narration-platform/code-narration-platform.md)
-- [AI-Augmented Personalized Feedback](projects/personalized-feedback/personalized-feedback.md)
-
----
-
-### For Instructors
-AI-assisted workflows and infrastructure that support grading, feedback, and instructional scalability while preserving human judgment and rigor.
-
-**Featured areas include:**
-- [Canvas-Integrated Chatbots](projects/canvas-integrated-chatbots/canvas-integrated-chatbots.md)
-- [AI-Assisted LaTeX & Lab Report Grading](projects/latex-lab-grading/latex-lab-grading.md)
-- [Computing & Engineering in the Age of AI](projects/comp-eng-age-of-ai/comp-eng-age-of-ai.md)
-
----
-
-### For Parents & the Public
-AI literacy initiatives focused on confidence, transparency, and responsible engagement with modern AI tools.
-
-**Featured areas include:**
-- [Introduction to Generative AI (Coursera)](projects/coursera/coursera.md)
-- [Local Gemini Chatbot for Parents](projects/gemini-parent-chatbot/gemini-parent-chatbot.md)
-- [AI Literacy Workshops, Community Talks, and Podcasts](projects/ai-literacy-workshops/ai-literacy-workshops.md)
+<div class="callout-grid">
+  <div class="project-card">
+    <h3><a href="projects/#for-students">For Students</a></h3>
+    <p>Interactive tutors, feedback systems, and learning tools designed to support conceptual understanding, reflection, and self-regulated learning.</p>
+  </div>
+  <div class="project-card">
+    <h3><a href="projects/#for-instructors">For Instructors</a></h3>
+    <p>AI-assisted workflows and infrastructure that support grading, feedback, and instructional scalability while preserving human judgment and rigor.</p>
+  </div>
+  <div class="project-card">
+    <h3><a href="projects/#for-parents-public">For Parents &amp; the Public</a></h3>
+    <p>AI literacy initiatives focused on confidence, transparency, and responsible engagement with modern AI tools.</p>
+  </div>
+</div>
 
 ---
 
 ## What Makes BOBPE Different
 
-BOBPE is not a single tool or platform. It is a **coherent ecosystem** of instructional practices, tools, and workflows designed around established learning science and real institutional constraints.
+<div class="section-group">
+  <div class="callout-card">
+    <p>BOBPE is not a single tool or platform. It is a <strong>coherent ecosystem</strong> of instructional practices, tools, and workflows designed around established learning science and real institutional constraints.</p>
+    <p>This ecosystem also includes a broader educational AI pipeline spanning Discovery, Forward LMS, and AI Robustness Audit, connecting semantic exploration, learner-facing delivery, and course improvement.</p>
+  </div>
+</div>
 
-This ecosystem also includes a broader educational AI pipeline spanning [Discovery](projects/discovery/discovery.md), [Forward LMS](projects/forward-lms/forward-lms.md), and [AI Robustness Audit](projects/audit/audit.md), connecting semantic exploration, learner-facing delivery, and course improvement.
+<div class="callout-grid">
+  <div class="project-card">
+    <h3><a href="projects/discovery/discovery.html">Discovery</a></h3>
+    <p>The semantic search and exploration layer of the platform.</p>
+  </div>
+  <div class="project-card">
+    <h3><a href="projects/forward-lms/forward-lms.html">Forward LMS</a></h3>
+    <p>A lightweight learner-facing delivery layer for structured educational content.</p>
+  </div>
+  <div class="project-card">
+    <h3><a href="projects/audit/audit.html">AI Robustness Audit</a></h3>
+    <p>An AI-informed review layer focused on course quality and assessment robustness.</p>
+  </div>
+</div>
 
 Across all projects, AI is treated as:
 - A support for understanding, not a shortcut

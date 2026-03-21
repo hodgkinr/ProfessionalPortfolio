@@ -56,7 +56,7 @@ AI Robustness Audit helps surface weak points and improvement opportunities so c
   style="max-width: 100%;">
 </iframe>
 
-If the embedded player does not load, view the demo on YouTube: [Audit: AI Robustness Demo](https://youtu.be/cV6edtdUgPo)
+If the embedded player does not load, view the demo on YouTube: <a class="video-link" href="https://youtu.be/cV6edtdUgPo">Audit: AI Robustness Demo</a>
 
 ---
 

@@ -76,13 +76,23 @@ The system has been used in instructional contexts and continues to evolve as pa
 ## Artifacts and Links
 
 ### Concept Report Example
+
+This image shows a typical student evaluation report that is automatically generated and returned as a PDF. Each report includes the student’s original response alongside AI-augmented, instructor-reviewed feedback. Feedback is personalized to each student’s short-answer response and includes targeted explanations as well as encouraging guidance, supporting reflection and conceptual understanding.
+
 <img src="images/concept_report.png"
      alt="Concept report sample"
      style="max-width: 700px; width: 100%; height: auto;">
 
 ---
 
+
+
 ### Concept Assessment Grader Interface
+
+This image shows the human grader interface for weekly concept quizzes. The question and answer key are displayed at the top, followed by the student’s verbatim response and a direct link to their Canvas submission. The student_feedback field is fully editable, allowing graders to quickly review and refine AI-generated feedback before proceeding.
+
+During the Fall 2025 semester, nearly 80% of AI-generated feedback was released unchanged after human review, with the remaining responses requiring only minor edits. Overall, grader effort translated to an effective feedback rate exceeding 80 words per minute, enabling high-quality personalized feedback with professional typist speed.
+
 <img src="images/concept_UI.png"
      alt="Grader interface for concept assessments"
      style="max-width: 700px; width: 100%; height: auto;">
@@ -90,6 +100,9 @@ The system has been used in instructional contexts and continues to evolve as pa
 ---
 
 ### Lab Report Feedback Example
+
+This image shows a sample lab report feedback form provided to students. The report includes pass/fail evaluations for rubric components along with detailed, personalized feedback on code structure, logic, and clarity. This approach enables the instructional team to assess not only code output but also the quality and organization of student-written code—something that is typically impractical to evaluate consistently in large-scale programming courses.
+
 <img src="images/lab_report.png"
      alt="Lab report feedback example"
      style="max-width: 700px; width: 100%; height: auto;">
@@ -97,6 +110,9 @@ The system has been used in instructional contexts and continues to evolve as pa
 ---
 
 ### Instructor Review Interface
+
+This image shows the code review grading interface used for programming-based assignments. The student’s submitted code is displayed alongside the program output, with AI-augmented feedback provided below. Both the feedback and pass/fail determinations are fully editable by the grader. This interface allows instructional staff to efficiently evaluate code correctness, execution, and structure within a single, integrated view.
+
 <img src="images/lab_UI.png"
      alt="Instructor review interface"
      style="max-width: 700px; width: 100%; height: auto;">

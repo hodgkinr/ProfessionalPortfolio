@@ -72,12 +72,18 @@ The system is used as part of AI literacy workshops and community discussions, a
 ## Artifacts and Links
 ### Example UI Walkthrough Video
 
-<iframe src="https://drive.google.com/file/d/17TpmM2Ik7M4Bz_SNP4mkohsUsKqEzrTF/view?usp=sharing"
-        width="700"
-        height="394"
-        allow="autoplay"
-        style="max-width: 100%;">
+<iframe
+  src="https://youtu.be/PksVwe7CkrI"
+  width="700"
+  height="394"
+  title="Gemini Based Custom Chatbot"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  style="max-width: 100%;">
 </iframe>
+
+If the embedded player does not load, view the demo on YouTube: <a class="video-link" href="https://youtu.be/PksVwe7CkrI">Gemini Custom Chatbot</a>
 
 - [GitHub repository](https://github.com/hodgkinr/basic-google-chat)
 

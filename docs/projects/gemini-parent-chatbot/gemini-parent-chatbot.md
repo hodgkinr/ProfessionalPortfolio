@@ -73,7 +73,7 @@ The system is used as part of AI literacy workshops and community discussions, a
 ### Example UI Walkthrough Video
 
 <iframe
-  src="https://youtu.be/PksVwe7CkrI"
+  src="https://www.youtube.com/embed/PksVwe7CkrI"
   width="700"
   height="394"
   title="Gemini Based Custom Chatbot"

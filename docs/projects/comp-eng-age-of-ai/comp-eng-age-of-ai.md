@@ -50,7 +50,7 @@ Assignments are structured to make student thinking visible and assess learning 
 
 ## Example Artifacts
 
-- [CU System AI Recognition Award: AI for Teaching & Learning](living-poster.html)
+- [CU System AI Recognition Award: AI for Teaching & Learning](living_poster.html)
 
 - [Course materials and examples](https://www.colorado.edu/aerospace/media/8832)
 

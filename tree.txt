@@ -1,48 +1,144 @@
 .
 ├── .gitignore
 ├── Checklist.md
-├── README
+├── LOCAL_PREVIEW.md
+├── README.md
+├── docs
+│   ├── CNAME
+│   ├── _config.yml
+│   ├── _site
+│   │   ├── assets
+│   │   │   ├── main.css
+│   │   │   └── minima-social-icons.svg
+│   │   ├── contact.html
+│   │   ├── feed.xml
+│   │   ├── index.html
+│   │   ├── mission.html
+│   │   └── projects
+│   │       ├── ai-literacy-workshops
+│   │       │   └── ai-literacy-workshops.html
+│   │       ├── audit
+│   │       │   └── audit.html
+│   │       ├── buffalo
+│   │       │   ├── README.md
+│   │       │   └── index.html
+│   │       ├── canvas-integrated-chatbots
+│   │       │   └── canvas-integrated-chatbots.html
+│   │       ├── charge
+│   │       │   ├── README.md
+│   │       │   └── index.html
+│   │       ├── code-narration-platform
+│   │       │   ├── ASEE_RMS_2025___AI_Code_Review.pdf
+│   │       │   └── code-narration-platform.html
+│   │       ├── comp-eng-age-of-ai
+│   │       │   ├── ASEE_2026___ASEN1030_Design (3).pdf
+│   │       │   ├── ASEE_rAIphie.pdf
+│   │       │   └── comp-eng-age-of-ai.html
+│   │       ├── concept-inventory-bots
+│   │       │   ├── ASEE_2025_BUFFALO_WIP.pdf
+│   │       │   └── concept-inventory-bots.html
+│   │       ├── coursera
+│   │       │   └── coursera.html
+│   │       ├── discovery
+│   │       │   └── discovery.html
+│   │       ├── forward-lms
+│   │       │   └── forward-lms.html
+│   │       ├── gemini-parent-chatbot
+│   │       │   ├── gemini-parent-chatbot.html
+│   │       │   └── raw_readme.html
+│   │       ├── index.html
+│   │       ├── latex-lab-grading
+│   │       │   ├── latex-lab-grading.html
+│   │       │   └── raw_readme.html
+│   │       ├── personalized-feedback
+│   │       │   ├── images
+│   │       │   │   ├── concept_UI.png
+│   │       │   │   ├── concept_report.png
+│   │       │   │   ├── lab_UI.png
+│   │       │   │   └── lab_report.png
+│   │       │   ├── personalized-feedback.html
+│   │       │   └── raw_readme.html
+│   │       └── pollenators
+│   │           ├── README.md
+│   │           └── index.html
+│   ├── assets
+│   │   └── main.scss
+│   ├── contact.md
+│   ├── index.md
+│   ├── mission.md
+│   └── projects
+│       ├── ai-literacy-workshops
+│       │   └── ai-literacy-workshops.md
+│       ├── audit
+│       │   └── audit.md
+│       ├── buffalo
+│       │   └── README.md
+│       ├── canvas-integrated-chatbots
+│       │   └── canvas-integrated-chatbots.md
+│       ├── charge
+│       │   └── README.md
+│       ├── code-narration-platform
+│       │   ├── ASEE_RMS_2025___AI_Code_Review.pdf
+│       │   └── code-narration-platform.md
+│       ├── comp-eng-age-of-ai
+│       │   ├── ASEE_2026___ASEN1030_Design (3).pdf
+│       │   ├── ASEE_rAIphie.pdf
+│       │   ├── comp-eng-age-of-ai.md
+│       │   └── living_poster.html
+│       ├── concept-inventory-bots
+│       │   ├── ASEE_2025_BUFFALO_WIP.pdf
+│       │   └── concept-inventory-bots.md
+│       ├── coursera
+│       │   └── coursera.md
+│       ├── discovery
+│       │   └── discovery.md
+│       ├── forward-lms
+│       │   └── forward-lms.md
+│       ├── gemini-parent-chatbot
+│       │   ├── gemini-parent-chatbot.md
+│       │   └── raw_readme.md
+│       ├── index.md
+│       ├── latex-lab-grading
+│       │   ├── latex-lab-grading.md
+│       │   └── raw_readme.md
+│       ├── personalized-feedback
+│       │   ├── images
+│       │   │   ├── concept_UI.png
+│       │   │   ├── concept_report.png
+│       │   │   ├── lab_UI.png
+│       │   │   └── lab_report.png
+│       │   ├── personalized-feedback.md
+│       │   └── raw_readme.md
+│       └── pollenators
+│           └── README.md
+├── misc
+│   ├── Award_Nominations
+│   │   └── CU_award_spring_2026
+│   │       ├── CU_award_Spring_2026-details.md
+│   │       ├── CU_award_Spring_2026-draft.md
+│   │       ├── FCS_1030.txt
+│   │       ├── claude_design_poster.md
+│   │       └── emails.md
+│   └── README.md
 ├── tree.txt
-└── website
-    └── content
-        ├── homepage.md
-        ├── mission.md
-        └── projects
-            ├── ai-literacy-workshops
-            │   └── ai-literacy-workshops.md
-            ├── buffalo
-            │   └── README.md
-            ├── canvas-integrated-chatbots
-            │   └── canvas-integrated-chatbots.md
-            ├── charge
-            │   └── README.md
-            ├── code-narration-platform
-            │   ├── ASEE_RMS_2025___AI_Code_Review.pdf
-            │   └── code-narration-platform.md
-            ├── comp-eng-age-of-ai
-            │   ├── ASEE_2026___ASEN1030_Design (3).pdf
-            │   ├── ASEE_rAIphie.pdf
-            │   └── comp-eng-age-of-ai.md
-            ├── concept-inventory-bots
-            │   ├── ASEE_2025_BUFFALO_WIP.pdf
-            │   └── concept-inventory-bots.md
-            ├── coursera
-            │   └── coursera.md
-            ├── gemini-parent-chatbot
-            │   ├── gemini-parent-chatbot.md
-            │   └── raw_readme.md
-            ├── latex-lab-grading
-            │   ├── latex-lab-grading.md
-            │   └── raw_readme.md
-            ├── personalized-feedback
-            │   ├── images
-            │   │   ├── concept_UI.png
-            │   │   ├── concept_report.png
-            │   │   ├── lab_UI.png
-            │   │   └── lab_report.png
-            │   ├── personalized-feedback.md
-            │   └── raw_readme.md
-            └── pollenators
-                └── README.md
+└── updates
+    ├── site-scheme-from-stitch
+    │   └── stitch_interactive_concept_map
+    │       ├── ai_learning_assistant_cu_boulder_edition
+    │       │   ├── code.html
+    │       │   └── screen.png
+    │       ├── cognitive_sanctuary
+    │       │   └── DESIGN.md
+    │       ├── educator_insights_hub_cu_boulder_edition
+    │       │   ├── code.html
+    │       │   └── screen.png
+    │       ├── interactive_concept_map_cu_boulder_edition
+    │       │   ├── code.html
+    │       │   └── screen.png
+    │       └── student_mastery_dashboard_cu_boulder_edition
+    │           ├── code.html
+    │           └── screen.png
+    └── working-project-summaries
+        └── audit-lms-semantic.md
 
-17 directories, 29 files
+50 directories, 91 files

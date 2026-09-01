@@ -9,6 +9,36 @@ This minimized snapshot contains only the data rendered by the public dashboard.
 3. **Influence beyond the assigned classroom:** The pedagogy transferred into Mathematics and Law, informed required CU System ChatGPT EDU training, earned two CU System recognitions, and entered regional/national teaching discussions through ASEE, Kiewit, RMAIIG, MathWorks, and other venues.
 4. **People and capacity building:** LA teams, student developers, SPUR/UROP researchers, high-school students, faculty colleagues, and institutional collaborators developed alongside the courses and tools.
 
+### University U1: Major positive impact in the disciplinary unit and on its students
+
+Primary case evidence:
+
+- [ASEN_2802_RALPHIE](EVIDENCE_ITEM_CATALOG.md#ASEN_2802_RALPHIE)
+- [ASEN_1030_COURSE](EVIDENCE_ITEM_CATALOG.md#ASEN_1030_COURSE)
+- [ASEN_1030_FEEDBACK](EVIDENCE_ITEM_CATALOG.md#ASEN_1030_FEEDBACK)
+- [ASEN_1030_CODE_INTERVIEWS](EVIDENCE_ITEM_CATALOG.md#ASEN_1030_CODE_INTERVIEWS)
+- [ASEN_3501_COURSE](EVIDENCE_ITEM_CATALOG.md#ASEN_3501_COURSE)
+- [AI_STUDENT_AGENCY](EVIDENCE_ITEM_CATALOG.md#AI_STUDENT_AGENCY)
+- [LA_MENTORING](EVIDENCE_ITEM_CATALOG.md#LA_MENTORING)
+
+### University U2: Considerable impact at CU Boulder generally
+
+Primary case evidence:
+
+- [CHATGPT_EDU_TRAINING](EVIDENCE_ITEM_CATALOG.md#CHATGPT_EDU_TRAINING)
+- [AI_MATH_LAW_TRANSFER](EVIDENCE_ITEM_CATALOG.md#AI_MATH_LAW_TRANSFER)
+- [CTL_AI_AMBASSADOR](EVIDENCE_ITEM_CATALOG.md#CTL_AI_AMBASSADOR)
+- [AI_AWARDS](EVIDENCE_ITEM_CATALOG.md#AI_AWARDS)
+
+### University U3: Role in national or international teaching, curriculum, or pedagogy discussions
+
+Primary case evidence:
+
+- [ASEE_PORTFOLIO](EVIDENCE_ITEM_CATALOG.md#ASEE_PORTFOLIO)
+- [RMAIIG_LEADERSHIP](EVIDENCE_ITEM_CATALOG.md#RMAIIG_LEADERSHIP)
+- [KIEWIT_NATIONAL_TALK](EVIDENCE_ITEM_CATALOG.md#KIEWIT_NATIONAL_TALK)
+- [KAIST_SPIN_MODULES](EVIDENCE_ITEM_CATALOG.md#KAIST_SPIN_MODULES)
+
 ### Bucket P1: Contributions to course and curriculum development
 
 Ranked primary evidence:

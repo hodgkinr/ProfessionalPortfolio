@@ -182,6 +182,18 @@ This is a candidate-authored working evidence map, not an official dossier or in
 
 ---
 
+<a id="PEER_EVALUATION_FEEDBACK_PIPELINE"></a>
+
+## PEER_EVALUATION_FEEDBACK_PIPELINE - End-to-end peer evaluation synthesis and feedback
+
+**Short description:** Bobby built a Canvas-integrated system that compiles peer-evaluation comments, uses AI to synthesize individualized constructive feedback, returns it through Canvas, and gives instructors a summary with standout comments or patterns flagged.
+
+**Long description:** This system extends Bobby's earlier sentiment-analysis and constructive-paraphrasing work into an end-to-end feedback workflow. It ingests student peer-evaluation comments, compiles and organizes them, synthesizes individualized constructive feedback, automatically uploads that feedback to Canvas, and produces an instructor-facing summary that flags notable comments or patterns. It is distinct from the ASEN 1030 pipeline, which generates feedback on submitted concept and coding work. The tool is strong supporting evidence of student engagement, scalable teaching practice, and instructional capacity; course context, deployment scale, output quality, human review, privacy procedures, instructor use, and resulting outcomes still need corroboration.
+
+**Primary sources:** Supporting materials are retained in the private promotion repository.
+
+---
+
 <a id="AI_CONCEPT_FEEDBACK"></a>
 
 ## AI_CONCEPT_FEEDBACK - Model evaluation, failure analysis, and feedback redesign
@@ -256,11 +268,11 @@ This is a candidate-authored working evidence map, not an official dossier or in
 
 <a id="BOBPE_FRAMEWORK"></a>
 
-## BOBPE_FRAMEWORK - Coherent portfolio of personalized AI-supported education
+## BOBPE_FRAMEWORK - Personalized education at scale framework
 
-**Short description:** BOBPE/bobpe.com organizes Bobby's personalized feedback, Canvas tools, tutoring/RAG systems, and related practices into a coherent applied AI-education framework.
+**Short description:** BOBPE, or Bot-Based Personalized Education, is Bobby's north star for making a class of 200 feel like a class of 20 through human-supervised personalization at scale.
 
-**Long description:** The framework helps present multi-year work as a connected program rather than isolated tools. Its component methods have transferred into Math and Law, but independent adoption of the BOBPE name or framework itself remains unverified. Use BOBPE as an organizing and dissemination device, not as a substitute for course-level proof.
+**Long description:** The framework connects Bobby's deployed personalized-feedback pipeline, Canvas tools, tutoring/RAG systems, public course materials, and cross-unit collaborations into an end-to-end, human-on-the-loop educational vision. The current evidence supports rapid personalized feedback with human review; targeted individualized assignments and apprenticeship-like pathways remain future aims. Component methods have transferred into Math and Law, but independent adoption of the BOBPE name or framework remains unverified. Use BOBPE as the organizing direction for a multi-year program, not as a substitute for course-level proof.
 
 **Primary sources:** Supporting materials are retained in the private promotion repository.
 
@@ -306,9 +318,9 @@ This is a candidate-authored working evidence map, not an official dossier or in
 
 ## COURSERA_AI_COURSES - Three graduate generative-AI courses
 
-**Short description:** Bobby's record identifies three Coursera graduate courses in generative AI, potentially extending his curriculum impact to a broad online audience.
+**Short description:** Bobby created and taught three Coursera graduate courses in generative AI, translating a fast-changing technical field into a coherent online learning sequence.
 
-**Long description:** The courses are *Introduction to Generative AI*, *Modern Applications of Generative AI*, and *Advances in Generative AI*. Their promotion weight cannot be set until Bobby's formal role, launch dates, active status, enrollment/completion, ratings, and ownership are verified. Strong learner metrics could make this important national/international reach evidence.
+**Long description:** The courses are *Introduction to Generative AI*, *Modern Applications of Generative AI*, and *Advances in Generative AI*. Bobby reports that creating them improved his technical content delivery and contributed to the flipped, experience-centered approach used in ASEN 3501. His creator/instructor role is candidate-confirmed and recorded in the CV; launch dates, active status, enrollment/completion, ratings, and ownership still need official verification. Strong learner metrics could make this important national/international reach evidence.
 
 **Primary sources:** Supporting materials are retained in the private promotion repository.
 

@@ -24,7 +24,7 @@ This connects directly to how I talk with students about the profession they are
 
 I also want students to leave with the expectation that learning continues after the course ends. In ASEN 1030, I integrated self-paced external MATLAB Academy modules with class topics and lab activities. Students received industry-quality training and externally recognized digital credentials they could add to a resume or professional portfolio, while optional modules created pathways into Simulink, data analysis, visualization, and certification preparation.[^4] This was a small but intentional shift in how I think about coursework: when possible, course work should strengthen immediate learning while also showing students how to continue learning and document that growth beyond the university.
 
-## Making in-person learning worth the room
+## Making in-person learning worth the room reservation
 
 Creating three graduate Coursera courses in generative AI, *Introduction to Generative AI*, *Modern Applications of Generative AI*, and *Advances in Generative AI*, forced me to think carefully about what online instruction does well.[^5] It also made me reconsider what students should gain from being physically present with an instructor and with one another.
 

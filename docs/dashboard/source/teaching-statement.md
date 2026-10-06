@@ -2,13 +2,9 @@
 
 **Bobby Hodgkinson**
 
-**Working draft — September 8, 2026**
-
-**Target: no more than 1,500 words**
-
 My passion as an educator has always been grounded in experiential learning. Students develop engineering understanding and judgment by building, observing, testing, and reconciling theory with physical evidence.[^1] That philosophy has not changed as generative artificial intelligence (AI) has become part of education and engineering practice. If anything, I think it has become more important.
 
-Easy access to increasingly capable AI changes what it means to learn and contribute, but it does not eliminate the need for wisdom. A phrase I have grown quite fond of is, “Intelligence is the ability to solve problems; wisdom is knowing which problems to solve.” That captures much of what I believe educators are confronting right now. As AI takes on more routine and entry-level work, our students need meaningful experience, judgment, communication skills, responsibility, and ownership earlier in their education. They need to understand the governing concepts, but they also need to know when and how to leverage technology, how to recognize when it is wrong, and why they themselves alwyas need to be accountable for the answer.
+Easy access to increasingly capable AI changes what it means to learn and contribute, but it does not eliminate the need for wisdom. A phrase I have grown quite fond of is, “Intelligence is the ability to solve problems; wisdom is knowing which problems to solve.” That captures much of what I believe educators are confronting right now. As AI takes on more routine and entry-level work, our students need meaningful experience, judgment, communication skills, responsibility, and ownership earlier in their education. They need to understand the governing concepts, but they also need to know when and how to leverage technology, how to recognize when it is wrong, and why they themselves always need to be accountable for the answer.
 
 My pedagogical north star is to make a class of 200 feel, from each student’s perspective, more like a class of 20. Technology can help an instructional team provide timely, individualized feedback at that scale, and I believe it will increasingly allow us to create targeted learning pathways as well. I call this broader effort BOBPE: Bot-Based Personalized Education, (pronounced “bah-pee,” /ˈbɑːpi/), and I share its developing tools and practices at [bobpe.com](https://www.bobpe.com).[^2] The goal is not simply to build another Socratic AI tutor. I am working toward a human-on-the-loop educational ecosystem in which technology expands the attention and personalization we can provide, while instructors remain responsible for the learning environment and students remain responsible for their own work.
 

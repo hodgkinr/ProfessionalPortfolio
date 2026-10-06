@@ -2,10 +2,6 @@
 
 **Bobby Hodgkinson**
 
-**Working draft — September 8, 2026**
-
-**Target: no more than 1,500 words**
-
 I understand leadership as creating durable capacity: aligning people, tools, structures, and shared purpose so a community can accomplish more than any individual could alone. My work began with the laboratories, curriculum, and infrastructure of Smead Aerospace Engineering Sciences and has expanded across CU Boulder, the CU System, professional teaching communities, and public conversations about generative AI (AI) and engineering education. The consistent thread has been turning emerging technologies and educational ideas into responsible practices that others can use. Increasingly, I organize that work around a larger goal: building the human and technical capacity to make large courses feel personal.[^1]
 
 ## Building departmental capacity

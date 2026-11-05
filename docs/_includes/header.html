@@ -1,0 +1,28 @@
+<header class="portfolio-header" role="banner">
+  <div class="portfolio-header__inner">
+    <a class="portfolio-brand" rel="author" href="{{ '/' | relative_url }}">
+      <span class="portfolio-brand__name">BOBPE</span>
+      <span class="portfolio-brand__rule" aria-hidden="true"></span>
+      <span class="portfolio-brand__descriptor">Personalized education at scale</span>
+    </a>
+
+    <div class="portfolio-nav">
+      <input class="portfolio-nav__trigger" type="checkbox" id="portfolio-nav-trigger" aria-label="Toggle primary navigation">
+      <label class="portfolio-nav__toggle" for="portfolio-nav-trigger">
+        <span>Menu</span>
+        <span class="portfolio-nav__icon" aria-hidden="true"></span>
+      </label>
+      <nav class="portfolio-nav__links" aria-label="Primary navigation">
+        {%- for item in site.data.navigation -%}
+          {%- assign is_active = false -%}
+          {%- if page.url == item.url -%}
+            {%- assign is_active = true -%}
+          {%- elsif item.match and page.url contains item.match -%}
+            {%- assign is_active = true -%}
+          {%- endif -%}
+          <a href="{{ item.url | relative_url }}"{% if is_active %} class="is-active" aria-current="page"{% endif %}>{{ item.title }}</a>
+        {%- endfor -%}
+      </nav>
+    </div>
+  </div>
+</header>

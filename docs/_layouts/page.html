@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{%- assign rendered_content = content | strip -%}
+{%- assign page_kind = 'standard' -%}
+{%- if page.url == '/projects/' -%}
+  {%- assign page_kind = 'projects-index' -%}
+{%- elsif page.url contains '/projects/' -%}
+  {%- assign page_kind = 'project' -%}
+{%- elsif page.url == '/mission.html' -%}
+  {%- assign page_kind = 'mission' -%}
+{%- elsif page.url == '/contact.html' -%}
+  {%- assign page_kind = 'contact' -%}
+{%- endif -%}
+<article class="content-shell page-document page-document--{{ page_kind }}">
+  {%- unless rendered_content contains '<h1' -%}
+    <header class="page-document__header">
+      <p class="eyebrow">BOBPE</p>
+      <h1>{{ page.title | escape }}</h1>
+    </header>
+  {%- endunless -%}
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>

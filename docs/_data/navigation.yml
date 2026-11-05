@@ -1,0 +1,12 @@
+- title: Home
+  url: /
+
+- title: Mission
+  url: /mission.html
+
+- title: Projects
+  url: /projects/
+  match: /projects/
+
+- title: Contact
+  url: /contact.html

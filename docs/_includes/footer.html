@@ -1,0 +1,21 @@
+<footer class="portfolio-footer">
+  <div class="portfolio-footer__inner">
+    <div class="portfolio-footer__identity">
+      <strong>BOBPE</strong>
+      <p>BOt-Based Personalized Education &amp; Productivity Enhancement</p>
+    </div>
+
+    <nav class="portfolio-footer__nav" aria-label="Footer navigation">
+      {%- for item in site.data.navigation -%}
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {%- endfor -%}
+    </nav>
+
+    <div class="portfolio-footer__contact">
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      {%- if site.linkedin_username -%}
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">LinkedIn</a>
+      {%- endif -%}
+    </div>
+  </div>
+</footer>
